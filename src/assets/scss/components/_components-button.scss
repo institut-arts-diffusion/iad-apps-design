@@ -1,0 +1,70 @@
+// =======================================
+// button
+// =======================================
+
+.c-button {
+  --btn-border: var(--iad-gray-600);
+  --btn-background: var(--iad-white);
+  --btn-color: var(--iad-gray-100);
+  --btn-radius: 3px;
+
+  display: inline-flex;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--btn-border);
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  padding: 10px 22px;
+  line-height: 100%;
+  border-radius: 3px;
+  font-size: 1rem;
+  gap: 6px;
+
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    --btn-border: var(--iad-gray-500);
+  }
+}
+
+.c-button--primary {
+  --btn-border: var(--iad-brand-dark);
+  --btn-background: var(--iad-brand-dark);
+  --btn-color: var(--iad-white);
+
+  &:hover,
+  &:focus {
+    --btn-border: color-mix(
+      in srgb,
+      var(--iad-brand-dark) 80%,
+      var(--iad-black) 20%
+    );
+    --btn-background: color-mix(
+      in srgb,
+      var(--iad-brand-dark) 80%,
+      var(--iad-black) 20%
+    );
+  }
+}
+
+.c-button--danger {
+  --btn-border: var(--iad-ui-danger-dark);
+  --btn-background: var(--iad-ui-danger-dark);
+  --btn-color: var(--iad-white);
+
+  &:hover,
+  &:focus {
+    --btn-border: color-mix(
+      in srgb,
+      var(--iad-ui-danger-dark) 80%,
+      var(--iad-black) 20%
+    );
+    --btn-background: color-mix(
+      in srgb,
+      var(--iad-ui-danger-dark) 80%,
+      var(--iad-black) 20%
+    );
+  }
+}

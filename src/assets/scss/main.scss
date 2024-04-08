@@ -1,5 +1,7 @@
+@use "settings/_settings-breakpoints.scss";
 @use "settings/_settings-colors.scss";
 @use "settings/_settings-typography.scss";
+@use "settings/_settings-grid.scss";
 
 @use "base/_base-reset.scss";
 @use "base/_base-fonts.scss";
@@ -7,5 +9,11 @@
 @use "base/_base-body.scss";
 
 @use "layout/_layout-container.scss";
+@use "layout/_layout-3areas.scss";
 
 @use "components/_components-titles.scss";
+@use "components/_components-forms.scss";
+@use "components/_components-lists.scss";
+@use "components/_components-button.scss";
+
+@use "utilities/_utilities-spacing.scss";

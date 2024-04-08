@@ -18,6 +18,7 @@
   font-family: var(--fontstack-alt);
   line-height: 1.2;
   margin-block-end: var(--margin-block-end);
+  color: var(--iad-gray-100);
 }
 
 .c-h1 {
@@ -30,22 +31,24 @@
 }
 
 .c-h2 {
-  font-size: clamp(23px, 1rem + 0.72vw, 26px);
+  font-size: clamp(calc(23 / 16 * 1rem), 1rem + 0.72vw, calc(26 / 16 * 1rem));
 }
 
 .c-h3 {
-  font-size: clamp(20px, 1rem + 0.48vw, 23px);
+  font-size: clamp(calc(20 / 16 * 1rem), 1rem + 0.48vw, calc(23 / 16 * 1rem));
 }
 
 .c-h4 {
-  font-size: clamp(18px, 1rem + 0.24vw, 20px);
+  font-size: clamp(calc(18 / 16 * 1rem), 1rem + 0.24vw, calc(20 / 16 * 1rem));
 }
 
 .c-h5 {
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .c-h6 {
-  font-size: 16px;
-  color: var(--iad-gray-300);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--iad-gray-400);
 }
