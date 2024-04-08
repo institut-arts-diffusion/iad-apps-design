@@ -1,0 +1,9 @@
+# node stuff
+/dist
+
+# node stuff
+/node_modules/
+
+# Editors and mac stuff
+.idea
+.DS_Store
