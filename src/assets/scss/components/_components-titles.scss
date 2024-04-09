@@ -25,11 +25,6 @@
   font-size: clamp(calc(26 / 16 * 1rem), 1rem + 1vw, calc(29 / 16 * 1rem));
 }
 
-.c-h1--border {
-  padding-block-end: var(--padding-block-end);
-  border-block-end: 1px solid var(--border-color);
-}
-
 .c-h2 {
   font-size: clamp(calc(23 / 16 * 1rem), 1rem + 0.72vw, calc(26 / 16 * 1rem));
 }
@@ -40,6 +35,14 @@
 
 .c-h4 {
   font-size: clamp(calc(18 / 16 * 1rem), 1rem + 0.24vw, calc(20 / 16 * 1rem));
+}
+
+.c-h1--border,
+.c-h2--border,
+.c-h3--border,
+.c-h4--border {
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h5 {
