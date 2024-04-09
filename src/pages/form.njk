@@ -1,5 +1,5 @@
 ---
-permalink: index.html
+permalink: form/index.html
 ---
 
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ permalink: index.html
                     </div>
                   </div>
                   <input
-                    class="c-textfield"
+                    class="c-field-text"
                     type="text"
                     id="name"
                     name="name" />
@@ -98,7 +98,7 @@ permalink: index.html
                     </label>
                   </div>
                   <input
-                    class="c-textfield"
+                    class="c-field-text"
                     type="text"
                     id="surname"
                     name="surname" />
@@ -117,7 +117,7 @@ permalink: index.html
                     </div>
                   </div>
                   <input
-                    class="c-textfield"
+                    class="c-field-text"
                     type="text"
                     id="usualname"
                     name="usualname" />
@@ -133,7 +133,77 @@ permalink: index.html
                       <p>Le choix d'un pays c'est agréable</p>
                     </div>
                   </div>
-                  <div class="c-select">
+                  <div>
+                    <ul class="c-list-bare">
+                      <li>
+                        <div class="c-field-radio">
+                          <input
+                            class="c-field-radio__input"
+                            type="radio"
+                            id="belgique"
+                            name="paystest"
+                            value="belgique" />
+                          <label class="c-field-radio__label" for="belgique">
+                            Belgique
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="c-field-radio">
+                          <input
+                            class="c-field-radio__input"
+                            type="radio"
+                            id="france"
+                            name="paystest"
+                            value="france" />
+                          <label class="c-field-radio__label" for="france">
+                            France
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="c-field-radio">
+                          <input
+                            class="c-field-radio__input"
+                            type="radio"
+                            id="autre"
+                            name="paystest"
+                            value="autre" />
+                          <label class="c-field-radio__label" for="autre">
+                            Autre
+                          </label>
+                        </div>
+                      </li>
+                      <li class="u-mbs-xs">
+                        <div class="c-field-select">
+                          <select name="pays2" id="pays2">
+                            <option value="">Choisir un pays</option>
+                            <option value="be">Belgique</option>
+                            <option value="fr">France</option>
+                            <optgroup label="autres">
+                              <option value="zi">Zimbabwe</option>
+                              <option value="zi">Zimbabwe</option>
+                              <option value="zi">Zimbabwe</option>
+                              <option value="zi">Zimbabwe</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="c-formfield">
+                  <div>
+                    <label class="c-formfield__label" for="pays">
+                      Pays
+                      <span class="c-formfield__required">*</span>
+                    </label>
+                    <div class="c-formfield__help">
+                      <p>Le choix d'un pays c'est agréable</p>
+                    </div>
+                  </div>
+                  <div class="c-field-select">
                     <select name="pays" id="pays">
                       <option value="">Choisir un pays</option>
                       <option value="be">Belgique</option>
@@ -156,7 +226,7 @@ permalink: index.html
                     </div>
                   </div>
                   <textarea
-                    class="c-textarea"
+                    class="c-field-textarea"
                     id="message"
                     name="message"></textarea>
                 </div>
@@ -171,7 +241,7 @@ permalink: index.html
                     </div>
                   </div>
                   <input
-                    class="c-file"
+                    class="c-field-file"
                     type="file"
                     id="picture"
                     name="picture" />
@@ -190,13 +260,13 @@ permalink: index.html
                       </p>
                     </div>
                   </div>
-                  <div class="c-checkbox">
+                  <div class="c-field-checkbox">
                     <input
-                      class="c-checkbox__input"
+                      class="c-field-checkbox__input"
                       type="checkbox"
                       id="rgpd"
                       name="rgpd" />
-                    <label class="c-checkbox__label" for="rgpd">
+                    <label class="c-field-checkbox__label" for="rgpd">
                       J'autorise le traitement de mes données personelles
                     </label>
                   </div>
@@ -204,7 +274,60 @@ permalink: index.html
               </div>
 
               <div class="c-formsection">
-                <h2 class="c-h3">Choix d'un master</h2>
+                <h2 class="c-h3 c-h3--border">Bacheliers</h2>
+                <div class="c-formfield">
+                  <div>
+                    <p class="c-formfield__label">
+                      Choix d'un bachelier
+                      <span class="c-formfield__required">*</span>
+                    </p>
+                    <div class="c-formfield__help">
+                      <p>Petit texte d'aide</p>
+                    </div>
+                  </div>
+                  <ul class="c-list-bare">
+                    <li>
+                      <div class="c-field-checkbox">
+                        <input
+                          class="c-field-checkbox__input"
+                          type="checkbox"
+                          id="bacmm"
+                          name="bacmm" />
+                        <label class="c-field-checkbox__label" for="bacmm">
+                          Bachelier multimédia
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="c-field-checkbox">
+                        <input
+                          class="c-field-checkbox__input"
+                          type="checkbox"
+                          id="bacrea"
+                          name="bacrea" />
+                        <label class="c-field-checkbox__label" for="bacrea">
+                          Bachelier réalisation
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="c-field-checkbox">
+                        <input
+                          class="c-field-checkbox__input"
+                          type="checkbox"
+                          id="bacms"
+                          name="bacms" />
+                        <label class="c-field-checkbox__label" for="bacms">
+                          Bachelier montage et scripte
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-formsection">
+                <h2 class="c-h3 c-h3--border">Masters</h2>
                 <div class="c-formfield">
                   <div>
                     <p class="c-formfield__label">
@@ -217,25 +340,25 @@ permalink: index.html
                   </div>
                   <ul class="c-list-bare">
                     <li>
-                      <div class="c-checkbox">
+                      <div class="c-field-checkbox">
                         <input
-                          class="c-checkbox__input"
+                          class="c-field-checkbox__input"
                           type="checkbox"
                           id="mastermm"
                           name="mastermm" />
-                        <label class="c-checkbox__label" for="mastermm">
+                        <label class="c-field-checkbox__label" for="mastermm">
                           Master multimédia
                         </label>
                       </div>
                     </li>
                     <li>
-                      <div class="c-checkbox">
+                      <div class="c-field-checkbox">
                         <input
-                          class="c-checkbox__input"
+                          class="c-field-checkbox__input"
                           type="checkbox"
                           id="masterrea"
                           name="masterrea" />
-                        <label class="c-checkbox__label" for="masterrea">
+                        <label class="c-field-checkbox__label" for="masterrea">
                           Master réalisation qu'il sont vraiement les plus beaux
                           comme cela on voit ce que cela donne quand on passe
                           sur deux lignes.
@@ -243,13 +366,13 @@ permalink: index.html
                       </div>
                     </li>
                     <li>
-                      <div class="c-checkbox">
+                      <div class="c-field-checkbox">
                         <input
-                          class="c-checkbox__input"
+                          class="c-field-checkbox__input"
                           type="checkbox"
                           id="masterms"
                           name="masterms" />
-                        <label class="c-checkbox__label" for="masterms">
+                        <label class="c-field-checkbox__label" for="masterms">
                           Master montage et scripte
                         </label>
                       </div>
@@ -262,7 +385,7 @@ permalink: index.html
               </div>
 
               <div class="c-formsection">
-                <h2 class="c-h3">Choix d'un professeur</h2>
+                <h2 class="c-h3 c-h3--border">Professeur</h2>
                 <p>
                   Quel est votre professeur de multimédia préféré ? Quelle que
                   soit votre réponse, un seul professeur sera retenu et il
@@ -270,33 +393,35 @@ permalink: index.html
                 </p>
 
                 <div class="c-formfield">
-                  <p class="c-formfield__label">
-                    Choix d'un professeur
-                    <span class="c-formfield__required">*</span>
-                  </p>
+                  <div>
+                    <p class="c-formfield__label">
+                      Choix d'un professeur
+                      <span class="c-formfield__required">*</span>
+                    </p>
+                  </div>
                   <ul class="c-list-bare">
                     <li>
-                      <div class="c-radio">
+                      <div class="c-field-radio">
                         <input
-                          class="c-radio__input"
+                          class="c-field-radio__input"
                           type="radio"
                           id="prof1"
                           name="prof"
                           value="Julien Moreau" />
-                        <label class="c-radio__label" for="prof1">
+                        <label class="c-field-radio__label" for="prof1">
                           Julien Moreau
                         </label>
                       </div>
                     </li>
                     <li>
-                      <div class="c-radio">
+                      <div class="c-field-radio">
                         <input
-                          class="c-radio__input"
+                          class="c-field-radio__input"
                           type="radio"
                           id="prof2"
                           name="prof"
                           value="Christophe Pesesse" />
-                        <label class="c-radio__label" for="prof2">
+                        <label class="c-field-radio__label" for="prof2">
                           Christophe Pesesse qui est vraiment le plus agile
                           d'entre nous et qui est aussi là depuis le plus
                           longtemps.
@@ -304,14 +429,14 @@ permalink: index.html
                       </div>
                     </li>
                     <li>
-                      <div class="c-radio">
+                      <div class="c-field-radio">
                         <input
-                          class="c-radio__input"
+                          class="c-field-radio__input"
                           type="radio"
                           id="prof3"
                           name="prof"
                           value="Jérôme Coupé" />
-                        <label class="c-radio__label" for="prof3">
+                        <label class="c-field-radio__label" for="prof3">
                           Jérôme Coupé
                         </label>
                       </div>

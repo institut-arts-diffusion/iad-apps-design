@@ -72,9 +72,9 @@
 // inputs
 // =======================================
 
-.c-textfield,
-.c-textarea,
-.c-select {
+.c-field-text,
+.c-field-textarea,
+.c-field-select {
   box-sizing: border-box;
   background-color: var(--iad-white);
   border: 1px solid var(--iad-gray-500);
@@ -86,7 +86,7 @@
   width: 100%;
 }
 
-.c-select {
+.c-field-select {
   position: relative;
 
   & > select {
@@ -109,8 +109,8 @@
   }
 }
 
-.c-checkbox,
-.c-radio {
+.c-field-checkbox,
+.c-field-radio {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -118,22 +118,22 @@
   gap: 3px;
 }
 
-.c-checkbox__input,
-.c-radio__input {
+.c-field-checkbox__input,
+.c-field-radio__input {
   position: relative;
   top: 1px;
 }
 
-.c-checkbox__label,
-.c-radio__label {
+.c-field-checkbox__label,
+.c-field-radio__label {
   font-weight: 400;
 }
 
-.c-file {
+.c-field-file {
   font-size: calc(14 / 16 * 1rem);
 }
 
-.c-file::file-selector-button {
+.c-field-file::file-selector-button {
   --btn-border: var(--iad-gray-600);
   --btn-background: var(--iad-white);
   --btn-color: var(--iad-gray-100);
