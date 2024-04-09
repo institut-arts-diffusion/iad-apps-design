@@ -17,26 +17,32 @@
   font-weight: 500;
   font-family: var(--fontstack-alt);
   line-height: 1.2;
-  margin-block-end: var(--margin-block-end);
   color: var(--iad-gray-100);
-  padding-block-end: var(--padding-block-end);
-  border-block-end: 1px solid var(--border-color);
+  margin-block-end: var(--margin-block-end);
 }
 
 .c-h1 {
   font-size: clamp(calc(26 / 16 * 1rem), 1rem + 1vw, calc(29 / 16 * 1rem));
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h2 {
   font-size: clamp(calc(23 / 16 * 1rem), 1rem + 0.72vw, calc(26 / 16 * 1rem));
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h3 {
   font-size: clamp(calc(20 / 16 * 1rem), 1rem + 0.48vw, calc(23 / 16 * 1rem));
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h4 {
   font-size: clamp(calc(18 / 16 * 1rem), 1rem + 0.24vw, calc(20 / 16 * 1rem));
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h5 {
@@ -48,4 +54,9 @@
   font-weight: 600;
   font-size: 1rem;
   color: var(--iad-gray-400);
+}
+
+.c-h1--noborder {
+  --padding-block-end: 0;
+  border-block-end: none;
 }
