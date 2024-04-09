@@ -1,0 +1,27 @@
+// =======================================
+// chip
+// =======================================
+
+.c-chip {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  background-color: var(--iad-white);
+  overflow: clip;
+}
+
+.c-chip__text {
+  margin: 0;
+  padding: 6px 12px;
+  flex: 1 1 100%;
+}
+
+.c-chip__item {
+  min-width: 36px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,30 @@
+// =======================================
+// status
+// =======================================
+
+.c-status {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+}
+
+.c-status::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--iad-gray-700);
+}
+
+.c-status--success::before {
+  background-color: var(--iad-ui-success);
+}
+
+.c-status--warning::before {
+  background-color: var(--iad-ui-warning);
+}
+
+.c-status--danger::before {
+  background-color: var(--iad-ui-danger);
+}
