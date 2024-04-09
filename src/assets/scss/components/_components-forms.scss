@@ -29,30 +29,17 @@
   margin-block-end: 18px;
 }
 
-.c-formfield--inline {
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: first baseline;
-  gap: 3px;
-}
-
 // =======================================
 // label
 // =======================================
 
-.c-formlabel {
+.c-formfield__label {
   font-weight: 500;
   display: block;
   margin-block-end: 0;
 }
 
-.c-formlabel--inline {
-  font-weight: 400;
-  display: inline;
-}
-
-.c-formlabel__required {
-  font-weight: 500;
+.c-formfield__required {
   color: var(--iad-brand-dark);
 }
 
@@ -85,9 +72,9 @@
 // inputs
 // =======================================
 
-.c-formfield__textfield,
-.c-formfield__textarea,
-.c-formfield__select {
+.c-textfield,
+.c-textarea,
+.c-select {
   box-sizing: border-box;
   background-color: var(--iad-white);
   border: 1px solid var(--iad-gray-500);
@@ -99,7 +86,7 @@
   width: 100%;
 }
 
-.c-formfield__select {
+.c-select {
   position: relative;
 
   & > select {
@@ -122,16 +109,31 @@
   }
 }
 
-.c-formfield__checkbox,
-.c-formfield__radio {
-  flex: 0 0 auto;
+.c-checkbox,
+.c-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  gap: 3px;
 }
 
-.c-formfield__file {
+.c-checkbox__input,
+.c-radio__input {
+  position: relative;
+  top: 1px;
+}
+
+.c-checkbox__label,
+.c-radio__label {
+  font-weight: 400;
+}
+
+.c-file {
   font-size: calc(14 / 16 * 1rem);
 }
 
-.c-formfield__file::file-selector-button {
+.c-file::file-selector-button {
   --btn-border: var(--iad-gray-600);
   --btn-background: var(--iad-white);
   --btn-color: var(--iad-gray-100);
@@ -145,7 +147,7 @@
   background-color: var(--btn-background);
   color: var(--btn-color);
   padding: 6px 12px;
-  line-height: 100%;
+  line-height: 1;
   border-radius: 3px;
   font-size: calc(14 / 16 * 1rem);
 
