@@ -7,3 +7,24 @@
 *::after {
   margin-block-start: 0;
 }
+
+// =======================================
+// forms
+// =======================================
+
+textarea {
+  resize: vertical;
+  min-block-size: 4rem;
+}
+
+input,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}

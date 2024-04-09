@@ -67,38 +67,42 @@ permalink: index.html
               obcaecati, molestiae eius, non beatae mollitia ratione amet
               voluptas. Consequuntur unde ad blanditiis.
             </p>
-            <form method="get">
+            <form class="c-form" method="get">
               <div class="c-formsection">
                 <div class="c-formfield">
-                  <label class="c-formfield__label" for="name">
-                    Nom
-                    <span class="c-formfield__required">*</span>
-                  </label>
-                  <div class="c-formfield__helper">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nobis, officia esse eveniet doloribus natus beatae unde,
-                      perferendis culpa error, quo et ipsa nam atque quod
-                      architecto vel quisquam.
-                    </p>
+                  <div>
+                    <label class="c-formlabel" for="name">
+                      Nom
+                      <span class="c-formlabel__required">*</span>
+                    </label>
+                    <div class="c-formfield__help">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis, officia esse eveniet doloribus natus beatae unde,
+                        perferendis culpa error.
+                      </p>
+                    </div>
                   </div>
                   <input
-                    class="c-formfield__input"
+                    class="c-formfield__textfield"
                     type="text"
                     id="name"
                     name="name" />
                   <p class="c-formfield__error">This is an error message</p>
                 </div>
+
                 <div class="c-formfield">
-                  <label class="c-formfield__label" for="pays">
-                    Pays
-                    <span class="c-formfield__required">*</span>
-                  </label>
-                  <div class="c-formfield__helper">
-                    <p>Le choix d'un pays c'est agréable</p>
+                  <div>
+                    <label class="c-formlabel" for="pays">
+                      Pays
+                      <span class="c-formlabel__required">*</span>
+                    </label>
+                    <div class="c-formfield__help">
+                      <p>Le choix d'un pays c'est agréable</p>
+                    </div>
                   </div>
-                  <div class="c-formfield__selectwrapper">
-                    <select class="c-formfield__select" name="pays" id="pays">
+                  <div class="c-formfield__select">
+                    <select name="pays" id="pays">
                       <option value="">Choisir un pays</option>
                       <option value="be">Belgique</option>
                       <option value="fr">France</option>
@@ -108,19 +112,36 @@ permalink: index.html
                   <p class="c-formfield__error">This is an error message</p>
                 </div>
                 <div class="c-formfield">
-                  <label class="c-formfield__label" for="message">
-                    Pouquoi aimez-vous le code?
-                    <span class="c-formfield__required">*</span>
-                  </label>
-                  <div class="c-formfield__helper">
-                    <p>Soyez honnête, le serveur vous regarde</p>
+                  <div>
+                    <label class="c-formlabel" for="message">
+                      Pouquoi aimez-vous le code?
+                      <span class="c-formlabel__required">*</span>
+                    </label>
+                    <div class="c-formfield__help">
+                      <p>Soyez honnête, le serveur vous regarde</p>
+                    </div>
                   </div>
                   <textarea
-                    class="c-formfield__textarea"
-                    rows="5"
+                    class="c-formfield__input"
                     id="message"
                     name="message"></textarea>
                   <p class="c-formfield__error">This is an error message</p>
+                </div>
+                <div class="c-formfield">
+                  <div>
+                    <label class="c-formlabel" for="picture">
+                      Photo
+                      <span class="c-formlabel__required">*</span>
+                    </label>
+                    <div class="c-formfield__help">
+                      <p>Format .jpg, 800 par 800 pixels.</p>
+                    </div>
+                  </div>
+                  <input
+                    class="c-formfield__file"
+                    type="file"
+                    id="picture"
+                    name="picture" />
                 </div>
                 <div class="c-formfield c-formfield--inline">
                   <input
@@ -128,14 +149,14 @@ permalink: index.html
                     type="checkbox"
                     id="testcheckbox"
                     name="testcheckbox" />
-                  <div class="c-formfield__inlinecontent">
-                    <label class="c-formfield__inlinelabel" for="testcheckbox">
+                  <div>
+                    <label
+                      class="c-formlabel c-formlabel--inline"
+                      for="testcheckbox">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Laborum recusandae facere dolorum laboriosam animi quidem
-                      rem. Eius nisi quaerat commodi maiores dolores, dolorem
-                      hic quam asperiores ab est voluptatem laboriosam!
+                      Laborum recusandae facere dolorum laboriosam.
                     </label>
-                    <div class="c-formfield__helper">
+                    <div class="c-formfield__help">
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       </p>
@@ -146,57 +167,64 @@ permalink: index.html
 
               <div class="c-formsection">
                 <h2 class="c-h2">Choix d'un master</h2>
-                <ul class="c-list-bare">
-                  <li>
-                    <p class="c-fakelabel">
-                      Choisissez l'un ou l'autre master. Vous savez ils sont
-                      vachement sympathiques les masters à l'IAD. Les profs sont
-                      assez sympas en plus.
-                    </p>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__checkbox"
-                        type="checkbox"
-                        id="mastermm"
-                        name="mastermm" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="mastermm">
-                          Master multimédia
-                        </label>
+                <div class="c-checkboxes">
+                  <ul class="c-list-bare">
+                    <li>
+                      <p class="c-formlabel">
+                        Choix de master
+                        <span class="c-formlabel__required">*</span>
+                      </p>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__checkbox"
+                          type="checkbox"
+                          id="mastermm"
+                          name="mastermm" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="mastermm">
+                            Master multimédia
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__checkbox"
-                        type="checkbox"
-                        id="masterrea"
-                        name="masterrea" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="masterrea">
-                          Master réalisation de cinéma que ce sont vraiement les
-                          meilleurs comme cela c'est long et on peut voir un peu
-                          quand cela passe à la ligne
-                        </label>
+                    </li>
+                    <li>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__checkbox"
+                          type="checkbox"
+                          id="masterrea"
+                          name="masterrea" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="masterrea">
+                            Master réalisation de cinéma que ce sont vraiement
+                            les meilleurs comme cela c'est long et on peut voir
+                            un peu quand cela passe à la ligne
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__checkbox"
-                        type="checkbox"
-                        id="masterms"
-                        name="masterms" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="masterms">
-                          Master montage et scripte
-                        </label>
+                    </li>
+                    <li>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__checkbox"
+                          type="checkbox"
+                          id="masterms"
+                          name="masterms" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="masterms">
+                            Master montage et scripte
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div class="c-formsection">
@@ -206,61 +234,72 @@ permalink: index.html
                   soit votre réponse, un seul professeur sera retenu et il
                   possède un café en bords de meuse.
                 </p>
-                <ul class="c-list-bare">
-                  <li>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__radio"
-                        type="radio"
-                        id="radio3"
-                        name="prof" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="radio3">
-                          Julien Moreau
-                        </label>
+
+                <div class="c-radios">
+                  <p class="c-formlabel">
+                    Choix d'un professeur
+                    <span class="c-formlabel__required">*</span>
+                  </p>
+                  <ul class="c-list-bare">
+                    <li>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__radio"
+                          type="radio"
+                          id="radio3"
+                          name="prof" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="radio3">
+                            Julien Moreau
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__radio"
-                        type="radio"
-                        id="bac2"
-                        name="prof" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="bac2">
-                          Christophe Pesesse qui est vraiment le plus agile
-                          d'entre nous et qui est aussi là depuis le plus
-                          longtemps.
-                        </label>
+                    </li>
+                    <li>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__radio"
+                          type="radio"
+                          id="bac2"
+                          name="prof" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="bac2">
+                            Christophe Pesesse qui est vraiment le plus agile
+                            d'entre nous et qui est aussi là depuis le plus
+                            longtemps.
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="c-formfield c-formfield--inline u-mbe-xs">
-                      <input
-                        class="c-formfield__radio"
-                        type="radio"
-                        id="bac3"
-                        name="prof" />
-                      <div class="c-formfield__inlinecontent">
-                        <label class="c-formfield__inlinelabel" for="bac3">
-                          Jérôme Coupé
-                        </label>
+                    </li>
+                    <li>
+                      <div class="c-formfield c-formfield--inline u-mbe-xs">
+                        <input
+                          class="c-formfield__radio"
+                          type="radio"
+                          id="bac3"
+                          name="prof" />
+                        <div>
+                          <label
+                            class="c-formlabel c-formlabel--inline"
+                            for="bac3">
+                            Jérôme Coupé
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div class="c-formsection">
-                <div class="c-formfield">
-                  <input
-                    class="c-button c-button--primary"
-                    type="submit"
-                    value="Envoyer" />
-                </div>
+                <input
+                  class="c-button c-button--primary"
+                  type="submit"
+                  value="Envoyer" />
               </div>
             </form>
           </div>

@@ -1,4 +1,13 @@
 // =======================================
+// form
+// =======================================
+
+.c-form {
+  accent-color: var(--iad-brand-dark);
+  margin-block-end: 1.5rem;
+}
+
+// =======================================
 // form sections
 // =======================================
 
@@ -11,33 +20,47 @@
 // =======================================
 
 .c-formfield {
-  accent-color: var(--iad-brand-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: first stretch;
+  gap: 6px;
+
   margin-block-end: 18px;
 }
 
 .c-formfield--inline {
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: first baseline;
-  gap: 6px;
+  gap: 3px;
 }
 
-.c-formfield__label {
+// =======================================
+// label
+// =======================================
+
+.c-formlabel {
   font-weight: 500;
   display: block;
+  margin-block-end: 0;
 }
 
-.c-formfield__required {
+.c-formlabel--inline {
+  font-weight: 400;
+  display: inline;
+}
+
+.c-formlabel__required {
   font-weight: 500;
   color: var(--iad-brand-dark);
 }
 
-.c-formfield__inlinelabel {
-  font-weight: 400;
-}
+// =======================================
+// help
+// =======================================
 
-.c-formfield__helper {
+.c-formfield__help {
   font-weight: 400;
   font-size: calc(14 / 16 * 1rem);
   color: var(--iad-gray-300);
@@ -47,6 +70,10 @@
   }
 }
 
+// =======================================
+// error
+// =======================================
+
 .c-formfield__error {
   font-weight: 400;
   font-size: calc(14 / 16 * 1rem);
@@ -54,30 +81,31 @@
   margin-block-end: 0;
 }
 
-.c-formfield__input,
+// =======================================
+// inputs
+// =======================================
+
+.c-formfield__textfield,
 .c-formfield__textarea,
 .c-formfield__select {
   box-sizing: border-box;
   background-color: var(--iad-white);
-  margin-block: calc(6 / 16 * 1rem);
   border: 1px solid var(--iad-gray-500);
   border-radius: 3px;
   padding: calc(6 / 16 * 1rem);
-  font-size: inherit;
-  font-family: inherit;
   color: var(--iad-gray-100);
   line-height: 1.2;
   display: block;
   width: 100%;
 }
 
-.c-formfield__selectwrapper {
+.c-formfield__select {
   position: relative;
 
-  select {
-    padding-inline-end: 24px;
-    appearance: none;
-    -webkit-appearance: none;
+  & > select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
   }
 
   &::after {
@@ -94,29 +122,35 @@
   }
 }
 
-.c-formfield__select {
-  position: relative;
-  appearance: none;
-  -webkit-appearance: none;
-  padding-inline-end: 18px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 12px;
-    width: 6px;
-    height: 6px;
-    background-color: red;
-  }
-}
-
-.c-formfield__textarea {
-  resize: vertical;
-  min-height: 6rem;
-}
-
 .c-formfield__checkbox,
 .c-formfield__radio {
   flex: 0 0 auto;
+}
+
+.c-formfield__file {
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.c-formfield__file::file-selector-button {
+  --btn-border: var(--iad-gray-600);
+  --btn-background: var(--iad-white);
+  --btn-color: var(--iad-gray-100);
+  --btn-radius: 3px;
+
+  display: inline-block;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--btn-border);
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  padding: 6px 12px;
+  line-height: 100%;
+  border-radius: 3px;
+  font-size: calc(14 / 16 * 1rem);
+
+  &:hover,
+  &:focus {
+    --btn-border: var(--iad-gray-400);
+  }
 }
