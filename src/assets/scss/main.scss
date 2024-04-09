@@ -1,6 +1,5 @@
 @use "settings/_settings-colors.scss";
 @use "settings/_settings-typography.scss";
-@use "settings/_settings-grid.scss";
 @use "settings/_settings-radii.scss";
 
 @use "base/_base-reset.scss";
@@ -10,7 +9,8 @@
 @use "base/_base-links.scss";
 
 @use "layout/_layout-container.scss";
-@use "layout/_layout-3areas.scss";
+@use "layout/_layout-grid.scss";
+@use "layout/_layout-split.scss";
 
 @use "components/_components-titles.scss";
 @use "components/_components-forms.scss";
@@ -19,6 +19,12 @@
 @use "components/_components-login.scss";
 @use "components/_components-message.scss";
 @use "components/_components-suptitle.scss";
+@use "components/_components-siteheader.scss";
+@use "components/_components-sitefooter.scss";
+@use "components/_components-section.scss";
+@use "components/_components-headernav.scss";
+@use "components/_components-icon.scss";
+@use "components/_components-tabs.scss";
 
 @use "utilities/_utilities-spacing.scss";
 @use "utilities/_utilities-box-shadow.scss";

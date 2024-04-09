@@ -1,0 +1,49 @@
+@use "../mixins/mixins-media-queries" as *;
+
+// =======================================
+// siteheader
+// =======================================
+
+.c-siteheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--iad-grid-gutter);
+
+  padding-block: 24px;
+  padding-inline: 18px;
+  background-color: var(--iad-white);
+  border-block-end: 1px solid rgba(0, 0, 0, 0.06);
+
+  @include breakpoint(medium) {
+    padding-inline: 30px;
+  }
+}
+
+.c-siteheader__logo {
+  margin-inline-end: auto;
+
+  & img {
+    display: block;
+    width: 48px;
+    height: auto;
+
+    @include breakpoint(medium) {
+      width: 60px;
+    }
+  }
+}
+
+.c-siteheader__nav {
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
+
+.c-siteheader__hamburger {
+  @include breakpoint(medium) {
+    display: none;
+  }
+}

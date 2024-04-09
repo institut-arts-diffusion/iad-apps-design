@@ -10,8 +10,8 @@
 .c-h4,
 .c-h5,
 .c-h6 {
-  --border-color: rgba(0, 0, 0, 0.12);
-  --margin-block-end: 0.6em;
+  --border-color: var(--iad-gray-700);
+  --margin-block-end: 0.84em;
   --padding-block-end: 0.33em;
 
   font-weight: 500;
@@ -19,6 +19,8 @@
   line-height: 1.2;
   margin-block-end: var(--margin-block-end);
   color: var(--iad-gray-100);
+  padding-block-end: var(--padding-block-end);
+  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h1 {
@@ -35,14 +37,6 @@
 
 .c-h4 {
   font-size: clamp(calc(18 / 16 * 1rem), 1rem + 0.24vw, calc(20 / 16 * 1rem));
-}
-
-.c-h1--border,
-.c-h2--border,
-.c-h3--border,
-.c-h4--border {
-  padding-block-end: var(--padding-block-end);
-  border-block-end: 1px solid var(--border-color);
 }
 
 .c-h5 {

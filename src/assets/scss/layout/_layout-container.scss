@@ -1,13 +1,17 @@
+@use "../mixins/mixins-media-queries" as *;
+
 // =======================================
 // container
 // =======================================
 
 .l-container {
-  margin-inline: auto;
-  padding-inline: 18px;
-  max-width: 1500px;
-}
+  --inline-padding: 18px;
 
-.l-container--xlarge {
-  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--inline-padding);
+  max-width: 1240px;
+
+  @include breakpoint(medium) {
+    --inline-padding: 30px;
+  }
 }

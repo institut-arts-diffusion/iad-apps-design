@@ -1,0 +1,21 @@
+@use "../mixins/mixins-media-queries" as *;
+
+// =======================================
+// section
+// =======================================
+
+.c-section {
+  padding-block: 24px;
+
+  @include breakpoint(medium) {
+    padding-block: 42px;
+  }
+
+  @include breakpoint(large) {
+    padding-block: 60px;
+  }
+
+  @include breakpoint(xlarge) {
+    padding-block: 72px;
+  }
+}

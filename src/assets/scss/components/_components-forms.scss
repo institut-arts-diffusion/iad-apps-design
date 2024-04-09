@@ -4,7 +4,6 @@
 
 .c-form {
   accent-color: var(--iad-brand-dark);
-  margin-block-end: 1.5rem;
 }
 
 // =======================================
@@ -79,7 +78,7 @@
 .c-field-select {
   box-sizing: border-box;
   background-color: var(--iad-white);
-  border: 1px solid var(--iad-gray-500);
+  border: 1px solid var(--iad-gray-700);
   border-radius: 3px;
   padding: calc(6 / 16 * 1rem);
   color: var(--iad-gray-100);
