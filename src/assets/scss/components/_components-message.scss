@@ -1,0 +1,34 @@
+// =======================================
+// message
+// =======================================
+
+.c-message {
+  --msg-background: var(--iad-brand-washed);
+  --msg-border: var(--iad-brand);
+  --msg-radius: var(--iad-radius);
+
+  padding: 18px;
+  background-color: var(--msg-background);
+  border: 1px solid var(--msg-border);
+  border-radius: var(--msg-radius);
+  margin-block-end: 1.5rem;
+
+  & > *:last-child {
+    margin-block-end: 0;
+  }
+}
+
+.c-message--warning {
+  --msg-background: var(--iad-ui-warning-washed);
+  --msg-border: var(--iad-ui-warning);
+}
+
+.c-message--danger {
+  --msg-background: var(--iad-ui-danger-washed);
+  --msg-border: var(--iad-ui-danger);
+}
+
+.c-message--success {
+  --msg-background: var(--iad-ui-success-washed);
+  --msg-border: var(--iad-ui-success);
+}

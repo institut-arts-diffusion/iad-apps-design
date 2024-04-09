@@ -7,4 +7,10 @@ body {
   padding: 0;
   color: var(--iad-gray-100);
   background-color: var(--iad-brand-offwhite);
+  min-height: 100vh;
+}
+
+body.has-login {
+  display: grid;
+  place-items: center;
 }

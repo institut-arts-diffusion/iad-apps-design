@@ -1,0 +1,14 @@
+// =======================================
+// links
+// =======================================
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  color: var(--iad-brand-dark);
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}

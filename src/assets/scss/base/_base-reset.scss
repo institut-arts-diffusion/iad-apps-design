@@ -14,10 +14,14 @@
 
 textarea {
   resize: vertical;
+}
+
+textarea:not([rows]) {
   min-block-size: 4rem;
 }
 
 input,
+button,
 select,
 textarea {
   font-size: inherit;
@@ -27,4 +31,17 @@ textarea {
 select {
   appearance: none;
   -webkit-appearance: none;
+}
+
+// =======================================
+// titles
+// =======================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: pretty;
 }

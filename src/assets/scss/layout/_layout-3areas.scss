@@ -1,5 +1,9 @@
 @use "../mixins/mixins-media-queries" as *;
 
+// =======================================
+// 3 areas
+// =======================================
+
 .l-3areas {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
