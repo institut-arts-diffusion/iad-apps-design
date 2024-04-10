@@ -1,0 +1,38 @@
+// =======================================
+// badges
+// =======================================
+
+.c-badge {
+  --badge-background: var(--iad-gray-800);
+  --badge-border: var(--iad-gray-700);
+
+  display: inline-block;
+  padding: 4px 10px;
+  color: var(--iad-gray-100);
+  font-weight: 400;
+  font-size: calc(13 / 16 * 1rem);
+  line-height: 1;
+  background-color: var(--badge-background);
+  border: 1px solid var(--badge-border);
+  border-radius: 60px;
+}
+
+.c-badge--brand {
+  --badge-background: var(--iad-brand-washed);
+  --badge-border: var(--iad-brand);
+}
+
+.c-badge--success {
+  --badge-background: var(--iad-ui-success-washed);
+  --badge-border: var(--iad-ui-success);
+}
+
+.c-badge--warning {
+  --badge-background: var(--iad-ui-warning-washed);
+  --badge-border: var(--iad-ui-warning);
+}
+
+.c-badge--danger {
+  --badge-background: var(--iad-ui-danger-washed);
+  --badge-border: var(--iad-ui-danger);
+}
