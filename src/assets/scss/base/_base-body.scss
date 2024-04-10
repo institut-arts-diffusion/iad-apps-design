@@ -14,3 +14,7 @@ body.has-login {
   display: grid;
   place-items: center;
 }
+
+body.has-menu {
+  overflow-y: hidden;
+}

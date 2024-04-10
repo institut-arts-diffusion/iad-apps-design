@@ -1,74 +1,75 @@
 ---
 permalink: index.html
 ---
-{% extends "layouts/login.njk" %}
 
-{% block content %}
-  <div class="c-login u-box-shadow">
-    <div class="c-login__media">
-      <img
-        src="/assets/img/iad-logo-light.svg"
-        class="c-login__logo"
-        alt="Institut des Arts de Diffusion" />
-      <picture>
-        <source
-          media="(min-width: 750px)"
-          srcset="/assets/img/loginv-mandalorian.jpg 600w"
-          sizes="(min-width: 1200px) 48px;
+{% extends "layouts/login.njk" %} {% block content %}
+<div class="c-login u-box-shadow">
+  <div class="c-login__media">
+    <img
+      src="/assets/img/iad-logo-light.svg"
+      class="c-login__logo"
+      alt="Institut des Arts de Diffusion" />
+    <picture>
+      <source
+        media="(min-width: 750px)"
+        srcset="/assets/img/loginv-mandalorian.jpg 600w"
+        sizes="(min-width: 1200px) 48px;
                   40vw"
-          width="600"
-          height="800" />
-        <img
-          src="/assets/img/loginh-mandalorian.jpg"
-          srcset="/assets/img/loginh-mandalorian.jpg 1024w"
-          sizes="100vw"
-          width="800"
-          height="450"
-          class="c-login__img"
-          alt="" />
-      </picture>
-    </div>
-    <div class="c-login__content">
-      <div class="c-login__contentinner">
-        <form method="post" class="c-form u-mbe-none" action="">
-          <p class="c-suptitle">Epreuves d'admission</p>
-          <h1 class="c-h1  c-h1--noborder">Inscriptions 2023-2024</h1>
+        width="600"
+        height="800" />
+      <img
+        src="/assets/img/loginh-mandalorian.jpg"
+        srcset="/assets/img/loginh-mandalorian.jpg 1024w"
+        sizes="100vw"
+        width="800"
+        height="450"
+        class="c-login__img"
+        alt="" />
+    </picture>
+  </div>
+  <div class="c-login__content">
+    <div class="c-login__contentinner">
+      <form
+        method="post"
+        class="c-form u-mbe-none"
+        action="">
+        <p class="c-suptitle">Epreuves d'admission</p>
+        <h1 class="c-h1 c-h1--noborder">Inscriptions 2023-2024</h1>
+        <p>
+          <a href="https://www.iad-arts.be">Institut des Arts de Diffusion</a>
+          , amet consectetur adipisicing elit. Inventore, dicta dolore debitis
+          doloremque nam consequatur esse laborum illo sint a at perferendis
+          beatae temporibus error repudiandae nostrum molestiae labore numquam.
+        </p>
+        <div class="c-message">
           <p>
-            <a href="https://www.iad-arts.be"
-              >Institut des Arts de Diffusion</a
-            >
-            , amet consectetur adipisicing elit. Inventore, dicta dolore
-            debitis doloremque nam consequatur esse laborum illo sint a at
-            perferendis beatae temporibus error repudiandae nostrum
-            molestiae labore numquam.
+            Les inscriptions sont ouvertes jusqu'au mardi 20 juillet 2024 à
+            minuit.
           </p>
-          <div class="c-message">
-            <p>
-              Les inscriptions sont ouvertes jusqu'au mardi 20 juillet 2024
-              à minuit.
-            </p>
+        </div>
+        <div class="c-formfield">
+          <div>
+            <label
+              class="c-formfield__label"
+              for="email">
+              Email
+              <span class="c-formfield__required">*</span>
+            </label>
           </div>
-          <div class="c-formfield">
-            <div>
-              <label class="c-formfield__label" for="email">
-                Email
-                <span class="c-formfield__required">*</span>
-              </label>
-            </div>
-            <input
-              class="c-field-text"
-              type="text"
-              id="email"
-              name="email" />
-          </div>
-          <div class="c-formfield">
-            <input
-              class="c-button c-button--primary c-button--block"
-              type="button"
-              value="Se connecter" />
-          </div>
-        </form>
-      </div>
+          <input
+            class="c-field-text"
+            type="text"
+            id="email"
+            name="email" />
+        </div>
+        <div class="c-formfield">
+          <input
+            class="c-button c-button--primary c-button--block"
+            type="button"
+            value="Se connecter" />
+        </div>
+      </form>
     </div>
   </div>
+</div>
 {% endblock %}

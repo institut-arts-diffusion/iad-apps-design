@@ -28,10 +28,6 @@
     display: block;
     width: 48px;
     height: auto;
-
-    @include breakpoint(medium) {
-      width: 60px;
-    }
   }
 }
 

@@ -1,1 +1,2 @@
-console.log("Nothing to see here");
+import { init as mainnav } from "./modules/mainnav.js";
+mainnav();
