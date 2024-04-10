@@ -5,11 +5,7 @@
 // =======================================
 
 .c-section {
-  padding-block: 36px;
-
-  @include breakpoint(medium) {
-    padding-block: 42px;
-  }
+  padding-block: 42px;
 
   @include breakpoint(large) {
     padding-block: 60px;

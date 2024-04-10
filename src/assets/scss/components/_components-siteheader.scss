@@ -47,3 +47,8 @@
     display: none;
   }
 }
+
+.c-siteheader__hamburger > a,
+.c-siteheader__hamburger svg {
+  display: block;
+}
