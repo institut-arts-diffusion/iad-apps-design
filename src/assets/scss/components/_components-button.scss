@@ -2,13 +2,18 @@
 // button
 // =======================================
 
+// =======================================
+// button
+// =======================================
+
 .c-button {
   --btn-border: var(--iad-gray-600);
   --btn-background: var(--iad-white);
   --btn-color: var(--iad-gray-100);
   --btn-radius: 3px;
 
-  display: inline-flex;
+  display: inline-block;
+  text-align: center;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
@@ -21,13 +26,29 @@
   border-radius: var(--btn-radius);
   font-weight: 400;
   font-size: 1rem;
-  gap: 6px;
 
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+
+  &:has(.c-icon) {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
 
   &:hover,
   &:focus {
     --btn-border: var(--iad-gray-500);
+  }
+}
+
+.c-button--block {
+  width: 100%;
+  display: block;
+
+  &:has(.c-icon) {
+    display: flex;
   }
 }
 
