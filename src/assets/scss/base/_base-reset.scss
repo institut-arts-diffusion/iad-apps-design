@@ -13,7 +13,7 @@
 // =======================================
 
 textarea {
-  resize: vertical;
+  resize: block;
 }
 
 textarea:not([rows]) {
@@ -30,7 +30,6 @@ textarea {
 
 select {
   appearance: none;
-  -webkit-appearance: none;
 }
 
 // =======================================
