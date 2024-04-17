@@ -70,12 +70,11 @@
 }
 
 // =======================================
-// inputs
+// textfield and textarea
 // =======================================
 
 .c-field-text,
-.c-field-textarea,
-.c-field-select {
+.c-field-textarea {
   box-sizing: border-box;
   background-color: var(--iad-white);
   border: 1px solid var(--iad-gray-600);
@@ -87,8 +86,22 @@
   width: 100%;
 }
 
+// =======================================
+// select
+// =======================================
+
 .c-field-select {
   position: relative;
+
+  box-sizing: border-box;
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-600);
+  border-radius: 3px;
+  padding: 8px 6px;
+  color: var(--iad-gray-100);
+  line-height: 1.2;
+  display: block;
+  width: 100%;
 
   & > select {
     width: 100%;
@@ -110,24 +123,96 @@
   }
 }
 
+// =======================================
+// checkbox and radio
+// =======================================
+
 .c-field-checkbox,
 .c-field-radio {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: first baseline;
-  gap: 3px;
-}
-
-.c-field-checkbox__input,
-.c-field-radio__input {
-  position: relative;
-  top: 1px;
+  display: inine-block;
 }
 
 .c-field-checkbox__label,
 .c-field-radio__label {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+
   font-weight: 400;
+}
+
+.c-field-checkbox__input,
+.c-field-radio__input {
+  margin: 0;
+  position: relative;
+  top: 0.3em;
+}
+
+// =======================================
+// toggle
+// =======================================
+
+.c-field-toggle {
+  --toggle-width: 30px;
+  --toggle-height: 14px;
+  --toggle-background-color: var(--iad-gray-600);
+  --toggle-background-active-color: var(--iad-brand-dark);
+  --toggle-thumb-color: var(--iad-white);
+  --toggle-thumb-active-color: var(--iad-white);
+}
+
+.c-field-toggle__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.c-field-toggle__input {
+  flex: 0 0 auto;
+
+  position: relative;
+  top: 0.18em;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  border-radius: 60px;
+  background-color: var(--toggle-background-color);
+  padding: 2px;
+}
+
+.c-field-toggle__input:has(:checked) {
+  background-color: var(--toggle-background-active-color);
+}
+
+.c-field-toggle__input::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  pointer-events: none;
+
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.06);
+  width: var(--toggle-height);
+  height: var(--toggle-height);
+  border-radius: 60px;
+  background-color: var(--toggle-thumb-color);
+
+  transition: transform 0.06s ease-out, background-color 0.06s ease-out;
+}
+
+.c-field-toggle__input:has(:checked)::before {
+  transform: translateX(calc(var(--toggle-width) - var(--toggle-height)));
+  background-color: var(--toggle-thumb-active-color);
+}
+
+.c-field-toggle__input > input[type="checkbox"] {
+  margin: 0;
+  appearance: none;
 }
 
 .c-field-file {
