@@ -1,0 +1,58 @@
+/* =======================================
+=autocomplete
+======================================= */
+
+/* @TODO: check and refactor */
+
+.c-field-autocomplete__input {
+  box-sizing: border-box;
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-600);
+  border-radius: var(--iad-radius);
+  padding: 8px 6px;
+  color: var(--iad-gray-100);
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+}
+
+.c-field-autocomplete__content {
+  width: 100%;
+  border-radius: var(--iad-radius);
+  border: 1px solid var(--iad-gray-600);
+  background-color: var(--iad-white);
+  padding: var(--iad-space-sm) var(--iad-space-xs);
+  box-shadow: var(--iad-box-shadow);
+  outline: none;
+}
+
+.c-field-autocomplete__item {
+  display: flex;
+  user-select: none;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--iad-radius);
+  padding: var(--iad-space-sm) var(--iad-space-xs);
+  outline: none;
+  transition-property: all;
+  transition-duration: 0.75s;
+
+  &:hover {
+    background-color: var(--iad-brand-washed);
+  }
+}
+
+.c-field-autocomplete__item-indicator {
+  margin-left: auto;
+}
+
+.c-field-autocomplete__empty {
+  display: block;
+  padding: var(--iad-space-sm) var(--iad-space-xs);
+
+  color: var(--text-muted-foreground);
+}
+
+[data-highlighted] {
+  background: var(--iad-brand);
+}

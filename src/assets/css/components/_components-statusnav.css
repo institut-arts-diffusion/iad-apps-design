@@ -1,0 +1,49 @@
+/* =======================================
+=status nav
+======================================= */
+
+.c-statusnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 3px;
+}
+
+.c-statusnav__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 6px;
+  line-height: 1.36;
+}
+
+.c-statusnav__status {
+  height: 1lh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.c-statusnav__link {
+  color: var(--iad-gray-100);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.c-statusnav__link.is-active {
+  color: var(--iad-brand-dark);
+  text-decoration: underline;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}

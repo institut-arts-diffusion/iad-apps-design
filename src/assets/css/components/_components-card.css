@@ -1,0 +1,38 @@
+/* =======================================
+=card
+======================================= */
+
+.c-card {
+  display: block;
+}
+
+.c-card[inert] {
+  opacity: 50%;
+}
+
+.c-card__media {
+  overflow: hidden;
+  margin-block-end: 12px;
+
+  & > a {
+    display: block;
+  }
+}
+
+.c-card__image {
+  scale: 1;
+  transition: scale 0.2s ease-out;
+
+  a:hover &,
+  a:focus & {
+    scale: 1.018;
+  }
+}
+
+.c-card__title {
+  font-weight: 500;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 1.36;
+  font-family: var(--fontstack-alt);
+  color: var(--iad-gray-100);
+}

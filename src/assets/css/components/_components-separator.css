@@ -1,0 +1,10 @@
+/* =======================================
+=separator
+======================================= */
+
+.c-separator {
+  border: 0;
+  border-block-start: 1px solid var(--iad-gray-700);
+  margin-block: 1em;
+  padding: 0;
+}

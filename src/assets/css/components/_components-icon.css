@@ -1,0 +1,15 @@
+/* =======================================
+=icon
+======================================= */
+
+.c-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+}
+
+.c-icon--small {
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,29 @@
+/* =======================================
+=sitefooter
+======================================= */
+
+.c-sitefooter {
+  margin-block-start: 30px;
+
+  @media (width >= 750px) {
+    margin-block-start: 30px;
+  }
+
+  @media (width >= 1024px) {
+    margin-block-start: 48px;
+  }
+
+  @media (width >= 1140px) {
+    margin-block-start: 60px;
+  }
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.c-sitefooter__inner {
+  border-block-start: 1px solid var(--iad-gray-700);
+}
+
+.c-sitefooter__copyright {
+  margin: 0;
+  padding-block: 12px;
+}

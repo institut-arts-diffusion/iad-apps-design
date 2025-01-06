@@ -1,0 +1,28 @@
+/* =======================================
+=fonts
+======================================= */
+
+/* IBM PLEX SANS VARIABLE */
+/* no italic here, variable weight axis (only used for titles) */
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/ibmplex-sans-variable.woff2") format("woff2-variations");
+  src: url("../fonts/ibmplex-sans-variable.woff2") format("woff2")
+    tech("variations");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ROBOTO FLEX SANS VARIABLE */
+/* includes italic variation and all weights */
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("../fonts/roboto-flex-variable.woff2") format("woff2-variations");
+  src: url("../fonts/roboto-flex-variable.woff2") format("woff2")
+    tech("variations");
+  font-style: oblique 0deg 10deg;
+  font-weight: 100 1000;
+  font-stretch: 100%;
+  font-display: swap;
+}

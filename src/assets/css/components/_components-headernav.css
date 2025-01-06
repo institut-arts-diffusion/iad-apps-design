@@ -1,0 +1,38 @@
+/* =======================================
+=headernav
+======================================= */
+
+.c-headernav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.c-headernav__link {
+  display: inline-block;
+  padding-block: 3px;
+  font-size: 1rem;
+  color: var(--iad-gray-100);
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: var(--fontstack-main);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.c-headernav__link:has(.c-icon) {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+}

@@ -1,0 +1,32 @@
+/* =======================================
+=links
+======================================= */
+
+a {
+  color: var(--iad-brand-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* =======================================
+=links in titles
+======================================= */
+
+:is(h1, h2, h3, h4, h5, h6) {
+  & > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+
+  & > a:hover,
+  & > a:focus {
+    color: var(--iad-brand-dark);
+    text-decoration: none;
+  }
+}

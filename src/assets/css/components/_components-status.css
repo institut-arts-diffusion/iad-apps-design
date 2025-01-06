@@ -1,0 +1,28 @@
+/* =======================================
+=status
+======================================= */
+
+.c-status {
+  box-sizing: border-box;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--iad-gray-600);
+  border: 1px solid transparent;
+}
+
+.c-status--success {
+  background-color: var(--iad-ui-success);
+  border-color: transparent;
+}
+
+.c-status--warning {
+  background-color: var(--iad-ui-warning);
+  border-color: transparent;
+}
+
+.c-status--danger {
+  background-color: var(--iad-ui-danger);
+  border-color: transparent;
+}
