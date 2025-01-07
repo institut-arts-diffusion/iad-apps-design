@@ -3,6 +3,6 @@
 ======================================= */
 
 :root {
-  --fontstack-main: "Roboto Flex", "Roboto", system-ui, sans-serif;
+  --fontstack-main: system-ui, sans-serif;
   --fontstack-alt: "IBM Plex Sans", "Roboto", system-ui, sans-serif;
 }

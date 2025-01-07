@@ -1,0 +1,44 @@
+/* =======================================
+=sidebar
+======================================= */
+
+.c-sidebar {
+  block-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.c-sidebar__header {
+  flex: 0 0 auto;
+
+  margin: 0;
+  padding: 18px;
+  border-bottom: 1px solid var(--iad-gray-700);
+}
+
+.c-sidebar__header img {
+  vertical-align: middle;
+}
+
+.c-sidebar__nav {
+  flex: 1 1 100%;
+
+  margin: 0;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.c-sidebar__mainnav {
+  display: block;
+}
+
+.c-sidebar__usernav {
+  margin-block-start: auto;
+}

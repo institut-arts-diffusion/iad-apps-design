@@ -1,0 +1,38 @@
+/* =======================================
+=datatable
+======================================= */
+
+.c-datatable {
+  --datatable-border-color: var(--iad-gray-700);
+
+  inline-size: 100%;
+  text-align: left;
+  line-height: 1.2;
+  border-collapse: collapse;
+}
+
+.c-datatable thead {
+  font-weight: 450;
+}
+
+.c-datatable tr {
+  border-block-end: 1px solid var(--datatable-border-color);
+}
+
+.c-datatable tbody th {
+  font-weight: unset;
+}
+
+.c-datatable tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.c-datatable th,
+.c-datatable td {
+  padding: 12px 6px;
+  vertical-align: baseline;
+}
+
+.c-datacol-right {
+  text-align: right;
+}

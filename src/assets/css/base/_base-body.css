@@ -7,7 +7,7 @@ body {
   padding: 0;
   color: var(--iad-gray-100);
   background-color: var(--iad-white);
-  min-height: 100vh;
+  min-block-size: 100dvh;
 }
 
 body.has-menu {

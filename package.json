@@ -19,7 +19,7 @@
     "scripts:dev": "esbuild \"./src/assets/js/main.js\" --target=\"es2020\" --bundle --outfile=\"./dist/assets/js/main.bundle.js\"",
     "eleventy": "npx @11ty/eleventy --quiet",
     "watch:scripts": "onchange \"./src/assets/js/**/*\" -- npm run scripts:dev",
-    "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
+    "watch:styles": "onchange \"./src/assets/css/**/*\" -- npm run styles:dev",
     "build": "npm-run-all clean --parallel styles:prod scripts:prod eleventy",
     "dev": "npm-run-all --parallel server watch:*"
   },

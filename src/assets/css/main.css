@@ -43,6 +43,10 @@
 @import "components/_components-tabs.css";
 @import "components/_components-titles.css";
 @import "components/_components-topbar.css";
+@import "components/_components-searchform.css";
+@import "components/_components-datatable.css";
+@import "components/_components-sidebar.css";
+@import "components/_components-sidenav.css";
 
 @import "utilities/_utilities-spacing.css";
 @import "utilities/_utilities-visually-hidden.css";

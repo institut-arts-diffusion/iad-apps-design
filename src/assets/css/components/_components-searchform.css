@@ -1,0 +1,21 @@
+/* =======================================
+=searchform
+======================================= */
+
+.c-searchform {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  margin-block-end: 1.5em;
+}
+
+.c-searchform__field {
+  width: 100%;
+  background-color: var(--iad-gray-900);
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  padding: 12px 12px 12px 36px;
+  color: var(--iad-gray-100);
+  line-height: 1.2;
+}

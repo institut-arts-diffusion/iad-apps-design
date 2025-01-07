@@ -1,0 +1,70 @@
+---
+permalink: cours/index.html
+---
+
+{% extends "layouts/app.njk" %} 
+
+{% block content %}
+
+  <h1 class="c-h1">Cours</h1>
+
+  <form class="c-searchform" action="search.php">
+    <input class="c-searchform__field" type="search">
+  </form>
+
+  <div class="c-datatable-wrapper">
+    <table class="c-datatable">
+      <thead>
+        <tr>
+          <th scope="col">Code</th>
+          <th scope="col">Intitulé</th>
+          <th scope="col">Classe</th>
+          <th class="c-datacol-right" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">IAD1053</th>
+          <td>Introduction au dévelopement web front-end</td>
+          <td>MM1B</td>
+          <td class="c-datacol-right">
+            <button>...</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">IAD1123</th>
+          <td>Gestion de projets multimedia</td>
+          <td>MM2B</td>
+          <td class="c-datacol-right">
+            <button>...</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">IAD1148</th>
+          <td>Dévelopement web front-end</td>
+          <td>MM2B</td>
+          <td class="c-datacol-right">
+            <button>...</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">IAD1115</th>
+          <td>Atelier site internet</td>
+          <td>MM2B</td>
+          <td class="c-datacol-right">
+            <button>...</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">IAD1261</th>
+          <td>Dévelopement web front-end avancé</td>
+          <td>MM3B</td>
+          <td class="c-datacol-right">
+            <button>...</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+{% endblock %}

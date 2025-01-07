@@ -3,40 +3,54 @@
 ======================================= */
 
 .l-app {
-  --app-menu-size: 204px;
+  --app-menu-size: 240px;
+  --app-border: var(--iad-gray-700);
 
-  min-block-size: 100dvh;
+  min-block-size: 100vh;
 }
 
 .l-app__menu {
-  --menu-inline-padding: 18px;
-  --menu-block-padding: 18px;
-
-  padding-inline: var(--menu-inline-padding);
-  padding-block: var(--menu-block-padding);
+  --app-menu-background: var(--iad-gray-900);
 
   @media (width >= 750px) {
     position: fixed;
     inset-block-start: 0;
+    inset-block-end: 0;
     inset-inline-start: 0;
     inline-size: var(--app-menu-size);
-    min-block-size: 100%;
-    background-color: var(--iad-gray-900);
-    border-inline-end: 1px solid var(--iad-gray-800);
+    background-color: var(--app-menu-background);
+    border-inline-end: 1px solid var(--app-border);
+    overflow-y: auto;
   }
 }
 
 .l-app__content {
-  --content-inline-padding: 18px;
-  --content-block-padding: 18px;
+  --app-content-inline-padding: 18px;
 
-  padding-inline: var(--content-inline-padding);
-  padding-block: var(--content-block-padding);
+  padding-inline: var(--app-content-inline-padding);
 
   @media (width >= 750px) {
-    --content-block-padding: 30px;
-    --content-inline-padding: max(30px, 3vi);
+    --app-content-inline-padding: max(24px, 3vi);
 
+    min-block-size: 100vh;
     margin-inline-start: var(--app-menu-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+
+.l-app__main {
+  flex: 1 1 100%;
+  padding-block: 30px;
+}
+
+.l-app__footer {
+  flex: 0 0 auto;
+  padding-block: 18px;
+
+  & p {
+    margin-block-end: 0;
   }
 }
