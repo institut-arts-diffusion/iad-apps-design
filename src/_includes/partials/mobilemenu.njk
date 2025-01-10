@@ -1,30 +1,36 @@
 <div class="c-mobilemenu">
-    <div class="c-mobilemenu__header">
-      <button class="c-mobilemenu__close js-menutrigger" aria-label="open navigation">
-        {% include "svg/menuclose.svg" %}
-      </button>
-    </div>
-    <div class="c-mobilemenu__main">
-      <nav aria-label="mobile navigation">
-        <ul class="c-mobilenav">
-          <li class="c-mobilenav__item">
-            <a
-              class="c-mobilenav__link"
-              data-has-icon="true"
-              href="#">
-              {% include "svg/icons/icon_help.svg" %} Support
-            </a>
-          </li>
-          <li class="c-mobilenav__item">
-            <a
-              class="c-mobilenav__link"
-              data-has-icon="true"
-              href="#">
-              {% include "svg/icons/icon_logout.svg" %} Logout
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- <div class="c-mobilemenu__footer">footer</div> -->
+  <div class="c-mobilemenu__header">
+    <button class="c-mobilemenu__close js-menutrigger" aria-label="open navigation">
+      {% include "svg/menuclose.svg" %}
+    </button>
   </div>
+  <div class="c-mobilemenu__main">
+    <nav aria-label="mobile navigation">
+      {% for item in mainnav %}
+        {% if loop.first %}<ul class="c-mobilenav">{% endif %}
+          <li class="c-mobilenav__item">
+            <a
+              class="c-mobilenav__link"
+              href="{{ item.navUrl }}">
+              {{ item.navLabel }}
+            </a>
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="c-mobilemenu__footer">
+    <ul class="c-mobilenav">
+      <li class="c-mobilenav__item">
+        <a
+          class="c-mobilenav__link"
+          href="#">
+          <span class="c-icon c-icon--small">
+            {% include "svg/icons/icon_logout.svg" %}
+          </span>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

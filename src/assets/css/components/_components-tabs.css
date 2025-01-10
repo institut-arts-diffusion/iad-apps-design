@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
 
   overflow-x: auto;
 }
@@ -23,7 +23,8 @@
   padding-block: 3px;
   border-bottom: 2px solid var(--border-color);
   text-decoration: none;
-  color: var(--iad-gray-100);
+  font-weight: 450;
+  color: var(--iad-gray-500);
   text-wrap: nowrap;
 
   &:focus,
@@ -34,6 +35,7 @@
 
 .c-tabs__link.is-active {
   --border-color: var(--iad-brand);
+  color: var(--iad-gray-100);
 }
 
 .c-tabs__link.is-disabled {

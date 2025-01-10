@@ -2,7 +2,7 @@
 =titles
 ======================================= */
 
-/* Modularscale: https://www.modularscale.com/?18&px&1.125 */
+/* Modularscale: https://www.modularscale.com/?16&px&1.125 */
 
 :is(.c-h1, .c-h2, .c-h3, .c-h4, .c-h5, .c-h6) {
   --title-border-color: var(--iad-gray-700);

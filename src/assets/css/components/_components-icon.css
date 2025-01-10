@@ -3,13 +3,14 @@
 ======================================= */
 
 .c-icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  line-height: 1;
+  --icon-size: 18px;
+  & svg {
+    display: block;
+    inline-size: var(--icon-size);
+    block-size: var(--icon-size);
+  }
 }
 
-.c-icon--small {
-  width: 18px;
-  height: 18px;
+.c-icon[data-size="24px"] {
+  --icon-size: 24px;
 }

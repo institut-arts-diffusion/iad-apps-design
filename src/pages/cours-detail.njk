@@ -1,0 +1,143 @@
+---
+permalink: cours/detail/index.html
+---
+
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  <div class="l-container">
+    <div class="u-mbe-xxl">
+      <h1 class="c-h1 u-mbe-xxs">Introduction au dévelopement web front-end</h1>
+      <p><strong>IAD1053</strong> - Jérôme Coupé - UE81, UE2, U317</p>
+    </div>
+
+    <ul class="c-tabs u-mbe-lg">
+      <li class="c-tabs__item">
+        <a class="c-tabs__link  is-active" href="#">Points</a>
+      </li>
+      <li class="c-tabs__item">
+        <a class="c-tabs__link" href="#">Fiche de cours</a>
+      </li>
+    </ul>
+
+    <div class="c-datatable">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Elèves</th>
+            <th scope="col">Statuts</th>
+            <th scope="col">Points</th>
+            <th class="u-text-end" scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Marie-Dominique de Laquenelle</th>
+            <td>
+              <span class="c-badge" data-theme="success">Crédit résiduel</span>
+            </td>
+            <td>
+              12 / 60
+            </td>
+            <td class="u-text-end">
+              <button class="c-button" data-size="sm">
+                <span class="c-button__icon">
+                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Jérôme Coupé</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div class="c-inputgroup">
+                <input class="c-inputgroup__field c-input-text" data-padding="compact" type="text" size="3">
+                <div class="c-inputgroup__suffix">
+                  <div class="c-inputgroup__text">60</div>
+                </div>
+              </div>
+            </td>
+            <td class="u-text-end">
+              <button class="c-button" data-size="sm">
+                <span class="c-button__icon">
+                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Julien Moreau</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div class="c-inputgroup">
+                <input class="c-inputgroup__field c-input-text" data-padding="compact" type="text" size="3">
+                <div class="c-inputgroup__suffix">
+                  <div class="c-inputgroup__text">60</div>
+                </div>
+              </div>
+            </td>
+            <td class="u-text-end">
+              <button class="c-button" data-size="sm">
+                <span class="c-button__icon">
+                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Pierre-Vincent Ledoux</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div class="c-inputgroup">
+                <input class="c-inputgroup__field c-input-text" data-padding="compact" type="text" size="3">
+                <div class="c-inputgroup__suffix">
+                  <div class="c-inputgroup__text">60</div>
+                </div>
+              </div>
+            </td>
+            <td class="u-text-end">
+              <button class="c-button" data-size="sm">
+                <span class="c-button__icon">
+                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Etienne Baffrey</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div class="c-inputgroup">
+                <input class="c-inputgroup__field c-input-text" data-padding="compact" type="text" size="3">
+                <div class="c-inputgroup__suffix">
+                  <div class="c-inputgroup__text">60</div>
+                </div>
+              </div>
+            </td>
+            <td class="u-text-end">
+              <button class="c-button" data-size="sm">
+                <span class="c-button__icon">
+                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="u-mbs-base">
+      <button class="c-button c-button--primary">Enregistrer</button>
+    </p>
+  </div>
+  
+{% endblock %}

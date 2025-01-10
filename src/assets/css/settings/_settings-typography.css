@@ -5,4 +5,10 @@
 :root {
   --fontstack-main: system-ui, sans-serif;
   --fontstack-alt: "IBM Plex Sans", "Roboto", system-ui, sans-serif;
+
+  --iad-fontsize-md: calc(18 / 16 * 1rem);
+  --iad-fontsize-base: 1rem;
+  --iad-fontsize-sm: calc(14 / 16 * 1rem);
+  --iad-fontsize-xs: calc(13 / 16 * 1rem);
+  --iad-fontsize-xss: calc(11 / 16 * 1rem);
 }

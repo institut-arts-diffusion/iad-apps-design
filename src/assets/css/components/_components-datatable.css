@@ -4,35 +4,45 @@
 
 .c-datatable {
   --datatable-border-color: var(--iad-gray-700);
+  --datatable-cellpadding-inline: 6px;
+  --datatable-cellpadding-block: 12px;
 
-  inline-size: 100%;
-  text-align: left;
-  line-height: 1.2;
-  border-collapse: collapse;
+  font-size: var(--iad-fontsize-base);
+  overflow-x: auto;
+  overflow-y: clip;
 }
 
-.c-datatable thead {
-  font-weight: 450;
+.c-datatable table {
+  inline-size: 100%;
+  border-collapse: collapse;
 }
 
 .c-datatable tr {
   border-block-end: 1px solid var(--datatable-border-color);
 }
 
+.c-datatable th,
+.c-datatable td {
+  padding: var(--datatable-cellpadding-block)
+    var(--datatable-cellpadding-inline);
+  vertical-align: middle;
+  text-align: start;
+}
+
+.c-datatable thead th {
+  font-weight: 550;
+}
+
 .c-datatable tbody th {
   font-weight: unset;
 }
 
-.c-datatable tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+.c-datatable tr th:first-child,
+.c-datatable tr td:first-child {
+  padding-inline-start: 0;
 }
 
-.c-datatable th,
-.c-datatable td {
-  padding: 12px 6px;
-  vertical-align: baseline;
-}
-
-.c-datacol-right {
-  text-align: right;
+.c-datatable tr th:last-child,
+.c-datatable tr td:last-child {
+  padding-inline-end: 0;
 }

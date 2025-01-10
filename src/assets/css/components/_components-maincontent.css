@@ -1,9 +1,7 @@
 /* =======================================
-=radius
+=maincontent
 ======================================= */
 
-:root {
-  --iad-radius: 3px;
-  --iad-radius-m: 6px;
-  --iad-radius-pill: 999px;
+.c-maincontent {
+  margin-block: clamp(30px, 1.339rem + 2.679vi, 60px);
 }

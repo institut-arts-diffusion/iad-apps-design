@@ -4,39 +4,38 @@
 
 .c-badge {
   --badge-background: var(--iad-gray-800);
-  --badge-border: var(--iad-gray-600);
-  --badge-color: var(--iad-gray-100);
+  --badge-border: color-mix(in hsl, black 20%, var(--badge-background));
+  --badge-color: color-mix(in hsl, black 60%, var(--badge-background));
 
   display: inline-block;
-  padding: 3px 6px;
+  padding: 3px 8px;
   color: var(--badge-color);
   font-weight: 400;
   font-size: calc(13 / 16 * 1rem);
-  line-height: 1;
+  line-height: 1.07;
   background-color: var(--badge-background);
   border: 1px solid var(--badge-border);
   border-radius: var(--iad-radius);
+  text-wrap: nowrap;
 }
 
-.c-badge--brand {
+.c-badge[data-theme="brand"] {
   --badge-background: var(--iad-brand-washed);
   --badge-border: var(--iad-brand);
   --badge-color: var(--iad-brand-dark);
 }
 
-.c-badge--success {
+.c-badge[data-theme="success"] {
   --badge-background: var(--iad-ui-success-washed);
   --badge-border: var(--iad-ui-success);
   --badge-color: var(--iad-ui-success-dark);
 }
 
-.c-badge--warning {
+.c-badge[data-theme="warning"] {
   --badge-background: var(--iad-ui-warning-washed);
-  --badge-border: var(--iad-ui-warning);
-  --badge-color: var(--iad-ui-warning-dark);
 }
 
-.c-badge--danger {
+.c-badge[data-theme="danger"] {
   --badge-background: var(--iad-ui-danger-washed);
   --badge-border: var(--iad-ui-danger);
   --badge-color: var(--iad-ui-danger-dark);

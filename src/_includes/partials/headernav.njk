@@ -1,17 +1,24 @@
 <nav aria-label="header navigation">
   <ul class="c-headernav">
+    {% for item in mainnav %}
+      <li class="c-headernav__item">
+        <a
+          class="c-headernav__link"
+          href="{{ item.navUrl }}">
+          {{ item.navLabel }}
+        </a>
+      </li>
+    {% endfor %}
     <li class="c-headernav__item">
       <a
         class="c-headernav__link"
         href="#">
-        {% include "svg/icons/icon_help.svg" %} Support
-      </a>
-    </li>
-    <li class="c-headernav__item">
-      <a
-        class="c-headernav__link"
-        href="#">
-        {% include "svg/icons/icon_logout.svg" %} Logout
+        <span 
+          class="c-icon"
+          data-size="24px"
+          aria-label="log out">
+          {% include "svg/icons/icon_logout.svg" %}
+        </span>
       </a>
     </li>
   </ul>
