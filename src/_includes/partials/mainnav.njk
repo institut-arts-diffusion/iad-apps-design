@@ -1,0 +1,13 @@
+<nav aria-label="header navigation">
+  <ul class="c-mainnav">
+    {% for item in mainnav %}
+      <li class="c-mainnav__item">
+        <a
+          class="c-mainnav__link"
+          href="{{ item.navUrl }}">
+          {{ item.navLabel }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

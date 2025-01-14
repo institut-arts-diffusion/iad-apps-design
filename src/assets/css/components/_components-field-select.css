@@ -1,0 +1,49 @@
+/* =======================================
+=input field
+======================================= */
+
+/*
+- Can be used for all input fields (text, email, password, tel, url, number) 
+*/
+
+.c-field-select {
+  position: relative;
+
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  padding: 3px 6px;
+
+  inline-size: max-content;
+
+  &:focus-within {
+    outline: 2px solid var(--iad-brand-dark);
+  }
+}
+
+.c-field-select select {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  padding-inline-end: calc(18px + 3px);
+}
+
+.c-field-select__caret {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  translate: 0 -50%;
+
+  pointer-events: none;
+}
+
+/* =======================================
+=full width
+======================================= */
+
+.c-field-select[data-width="full"] {
+  inline-size: 100%;
+}

@@ -1,10 +1,5 @@
 export default [
   {
-    navLabel: "Accueil",
-    navUrl: "/",
-    navTrigger: "home",
-  },
-  {
     navLabel: "Cours",
     navUrl: "/cours/",
     navTrigger: "cours",

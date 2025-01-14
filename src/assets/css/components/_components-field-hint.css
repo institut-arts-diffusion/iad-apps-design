@@ -1,0 +1,16 @@
+/* =======================================
+=fild hint
+======================================= */
+
+.c-field-hint {
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--iad-gray-300);
+}
+
+.c-field-hint > *:last-child {
+  margin-block-end: 0;
+}
+
+.c-field-hint[data-variant="error"] {
+  color: var(--iad-ui-danger-dark);
+}

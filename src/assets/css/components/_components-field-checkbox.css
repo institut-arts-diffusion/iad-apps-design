@@ -1,0 +1,15 @@
+/* =======================================
+=checkbox field
+======================================= */
+
+.c-field-checkbox {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: var(--iad-space-xs);
+}
+
+.c-field-checkbox input[type="checkbox"] {
+  flex: 0 0 auto;
+}

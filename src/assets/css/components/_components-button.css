@@ -3,22 +3,30 @@
 ======================================= */
 
 .c-button {
-  --btn-background: var(--iad-gray-800);
-  --btn-background-interactive: color-mix(
-    in hsl,
-    black 3%,
-    var(--btn-background)
-  );
+  --btn-background: var(--iad-gray-700);
+  --btn-background-interactive: var(--iad-gray-700);
+
+  --btn-border: var(--iad-gray-700);
+  --btn-border-interactive: var(--iad-gray-700);
+
   --btn-color: var(--iad-gray-100);
+  --btn-color-interactive: var(--iad-gray-300);
+
+  --btn-font-size: 1rem;
+  --btn-font-weigth: 1rem;
+
+  --btn-gap: 6px;
+
   --btn-padding-inline: 18px;
   --btn-padding-block: 6px;
+
   --btn-radius: var(--iad-radius);
 
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: var(--btn-gap);
 
   text-align: center;
   cursor: pointer;
@@ -28,15 +36,18 @@
   color: var(--btn-color);
   padding-inline: var(--btn-padding-inline);
   padding-block: var(--btn-padding-block);
+  border: 1px solid var(--btn-border);
   border-radius: var(--btn-radius);
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: var(--btn-font-weigth);
+  font-size: var(--btn-font-size);
 
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
 
   &:hover,
   &:focus {
     background-color: var(--btn-background-interactive);
+    border-color: var(--btn-border-interactive);
+    color: var(--btn-color);
   }
 }
 
@@ -44,14 +55,60 @@
 =colors
 ======================================= */
 
-.c-button--primary {
+.c-button[data-variant="primary"] {
   --btn-background: var(--iad-brand-dark);
+  --btn-border: var(--iad-brand-dark);
   --btn-color: var(--iad-white);
+
+  --btn-background-interactive: color-mix(
+    in hsl,
+    black 12%,
+    var(--iad-brand-dark)
+  );
+  --btn-border-interactive: color-mix(in hsl, black 12%, var(--iad-brand-dark));
+  --btn-color-interactive: var(--iad-white);
 }
 
-.c-button--danger {
+.c-button[data-variant="danger"] {
   --btn-background: var(--iad-ui-danger-dark);
+  --btn-border: var(--iad-ui-danger-dark);
   --btn-color: var(--iad-white);
+
+  --btn-background-interactive: color-mix(
+    in hsl,
+    black 12%,
+    var(--iad-ui-danger-dark)
+  );
+  --btn-border-interactive: color-mix(
+    in hsl,
+    black 12%,
+    var(--iad-ui-danger-dark)
+  );
+  --btn-color-interactive: var(--iad-white);
+}
+
+/* =======================================
+=variants
+======================================= */
+
+.c-button[data-variant="plain"] {
+  --btn-background: transparent;
+  --btn-border: transparent;
+  --btn-color: var(--iad-gray-100);
+
+  --btn-background-interactive: transparent;
+  --btn-border-interactive: transparent;
+  --btn-color-interactive: var(--iad-gray-100);
+}
+
+.c-button[data-variant="outlined"] {
+  --btn-background: transparent;
+  --btn-border: var(--iad-gray-700);
+  --btn-color: var(--iad-gray-100);
+
+  --btn-background-interactive: transparent;
+  --btn-border-interactive: var(--iad-gray-600);
+  --btn-color-interactive: var(--iad-gray-100);
 }
 
 /* =======================================
@@ -60,8 +117,15 @@
 
 .c-button[data-size="sm"] {
   --btn-padding-inline: 6px;
-  --btn-padding-block: 3px;
+  --btn-padding-block: 6px;
   font-size: calc(14 / 16 * 1rem);
+}
+
+.c-button[data-size="xs"] {
+  --btn-gap: 3px;
+  --btn-padding-inline: 3px;
+  --btn-padding-block: 1px;
+  font-size: calc(13 / 16 * 1rem);
 }
 
 /* =======================================
@@ -70,4 +134,20 @@
 
 .c-button[data-width="full"] {
   inline-size: 100%;
+}
+
+/* =======================================
+=disabled
+======================================= */
+
+.c-button[disabled] {
+  cursor: not-allowed;
+
+  --btn-background: var(--iad-gray-700);
+  --btn-color: var(--iad-gray-500);
+  --btn-border: var(--iad-gray-700);
+
+  --btn-background-interactive: var(--iad-gray-700);
+  --btn-border-interactive: var(--iad-gray-700);
+  --btn-color-interactive: var(--iad-gray-100);
 }

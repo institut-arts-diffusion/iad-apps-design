@@ -1,0 +1,11 @@
+/* =======================================
+=fild label
+======================================= */
+
+.c-field-label {
+  font-weight: 600;
+}
+
+.c-field-label__required {
+  color: var(--iad-brand);
+}

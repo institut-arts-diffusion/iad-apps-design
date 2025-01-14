@@ -1,0 +1,9 @@
+/* =======================================
+=field
+======================================= */
+
+.c-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--iad-space-xxs);
+}

@@ -1,23 +1,24 @@
 <header class="c-siteheader">
-  <div class="l-container">
-    <div class="c-siteheader__content">
-      <div class="c-siteheader__logo">
-        <img
-          src="/assets/img/iad-logo-dark.svg"
-          alt="Institut des Arts de Diffusion" />
-      </div>
-      <div class="c-siteheader__nav">
-        {% include "partials/headernav.njk" %}
-      </div>
-      <div class="c-siteheader__hamburger">
-        <a
-          href="#"
-          class="js-menutrigger"
-          aria-label="navigation">
-          {% include "svg/menuopen.svg" %}
-        </a>
-      </div>
-      {% include "partials/mobilemenu.njk" %}
+  <div class="c-siteheader__content">
+    <div class="c-siteheader__logo">
+      {% include "svg/iad_logo.svg" %}
     </div>
+    <div class="c-siteheader__nav">
+      <div class="c-siteheader__mainnav">
+        {% include "partials/mainnav.njk" %}
+      </div>
+      <div class="c-siteheader__usernav">
+        {% include "partials/usernav.njk" %}
+      </div>
+    </div>
+    <div class="c-siteheader__hamburger">
+      <a
+        href="#"
+        class="js-menutrigger"
+        aria-label="navigation">
+        {% include "svg/menuopen.svg" %}
+      </a>
+    </div>
+    {% include "partials/mobilemenu.njk" %}
   </div>
 </header>

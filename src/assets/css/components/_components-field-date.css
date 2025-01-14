@@ -1,0 +1,30 @@
+/* =======================================
+=date field
+======================================= */
+
+/*
+- Specific for native date fields
+*/
+
+.c-field-date {
+  inline-size: max-content;
+
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  padding: 3px 6px;
+}
+
+.c-field-date > input {
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+
+/* =======================================
+=full width
+======================================= */
+
+.c-field-date[data-width="full"] {
+  inline-size: 100%;
+}

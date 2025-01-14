@@ -1,0 +1,34 @@
+/* =======================================
+=input field
+======================================= */
+
+/*
+- Can be used for all input fields (text, email, password, tel, url, number) 
+*/
+
+.c-field-textarea {
+  box-sizing: border-box;
+
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  padding: 3px 6px;
+
+  inline-size: max-content;
+
+  &:focus-within {
+    outline: 2px solid var(--iad-brand-dark);
+  }
+}
+
+.c-field-textarea textarea {
+  inline-size: 100%;
+}
+
+/* =======================================
+=full width
+======================================= */
+
+.c-field-textarea[data-width="full"] {
+  inline-size: 100%;
+}

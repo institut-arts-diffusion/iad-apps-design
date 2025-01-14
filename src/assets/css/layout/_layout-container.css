@@ -3,9 +3,10 @@
 ======================================= */
 
 .l-container {
-  --container-padding: 18px;
-  --container-max-width: 1640px;
+  --container-padding: var(--iad-space-md);
+  --container-max-width: 1140px;
 
+  box-sizing: border-box;
   margin-inline: auto;
   padding-inline: var(--container-padding);
   max-width: var(--container-max-width);

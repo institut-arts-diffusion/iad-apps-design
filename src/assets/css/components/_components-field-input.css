@@ -1,0 +1,47 @@
+/* =======================================
+=input field
+======================================= */
+
+/*
+- Can be used for all input fields (text, email, password, tel, url, number) 
+*/
+
+.c-field-input {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+
+  inline-size: max-content;
+
+  background-color: var(--iad-white);
+  border: 1px solid var(--iad-gray-700);
+  border-radius: var(--iad-radius);
+  padding: 3px 6px;
+
+  &:focus-within {
+    outline: 2px solid var(--iad-brand-dark);
+  }
+}
+
+.c-field-input > *:where(.c-field-input__prefix, .c-field-input__suffix) {
+  flex: 0 0 auto;
+  color: var(--iad-gray-500);
+}
+
+.c-field-input > input {
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+
+/* =======================================
+=full width
+======================================= */
+
+.c-field-input[data-width="full"] {
+  inline-size: 100%;
+}

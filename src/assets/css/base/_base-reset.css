@@ -18,7 +18,7 @@ form {
 }
 
 :where(input, button, select, textarea, select) {
-  outline-color: var(--iad-brand-dark);
+  outline: none;
 }
 
 textarea {
@@ -34,22 +34,15 @@ textarea:not([rows]) {
   font-family: inherit;
   line-height: inherit;
   color: inherit;
+  border: none;
+}
+
+:where(input[type="checkbox"], input[type="radio"]) {
+  margin: 0;
 }
 
 :where(button, select) {
   cursor: pointer;
-}
-
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 /* =======================================

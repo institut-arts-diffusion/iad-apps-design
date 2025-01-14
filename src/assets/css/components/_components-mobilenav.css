@@ -3,6 +3,8 @@
 ======================================= */
 
 .c-mobilenav {
+  --mobilenav-color: var(--iad-white);
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -17,7 +19,7 @@
   display: block;
   padding-block: 6px;
   font-size: 1rem;
-  color: var(--iad-gray-100);
+  color: var(--mobilenav-color);
   font-weight: 400;
   line-height: 1.2;
   font-family: var(--fontstack-main);
@@ -35,4 +37,8 @@
   justify-content: flex-start;
   align-items: center;
   gap: 3px;
+}
+
+.c-usernav__link.c-icon {
+  flex: 0 0 auto;
 }

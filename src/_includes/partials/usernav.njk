@@ -1,0 +1,18 @@
+<nav aria-label="user navigation">
+  <ul class="c-usernav">
+    {% for item in usernav %}
+      <li class="c-usernav__item">
+        <a
+          class="c-usernav__link"
+          href="{{ item.navUrl }}">
+          {% if item.navIcon %}
+            <span class="c-icon">
+              {% include item.navIcon %}
+            </span>
+          {% endif %}
+          {{ item.navLabel }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

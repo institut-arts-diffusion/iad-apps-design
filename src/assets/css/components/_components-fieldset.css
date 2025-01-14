@@ -1,10 +1,14 @@
 /* =======================================
-=smallbutton
+=fieldset
 ======================================= */
 
-.c-smallbutton {
-  cursor: pointer;
+.c-fieldset {
+  margin: 0;
   padding: 0;
   border: none;
-  background-color: none;
+}
+
+.c-fieldset legend {
+  margin: 0;
+  padding: 0;
 }

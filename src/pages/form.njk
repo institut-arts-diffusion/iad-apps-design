@@ -1,346 +1,385 @@
 ---
-permalink: form/index.html
+permalink: form/refactor/index.html
 ---
 
-{% extends "layouts/base.njk" %} 
-
+{% extends "layouts/base.njk" %}
 {% block content %}
-  <div class="l-container">
-    <h1 class="c-h1">Inscription aux épreuves d'admission</h1>
-    <h2 class="c-h2">Profil personnel</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam natus
-      dolor inventore ut libero repudiandae maxime quisquam obcaecati,
-      molestiae eius, non beatae mollitia ratione amet voluptas.
-      Consequuntur unde ad blanditiis.
-    </p>
-    <form
-      class="c-form"
-      method="get">
-      <div class="c-message c-message--danger">
-        <p>
-          Bon ... nous avons un sérieux problème de nature relativement
-          globale.
-        </p>
-      </div>
-      <div class="c-formsection">
-        <div class="c-formfield">
+<div class="l-container l-container--lg">
+  <h1 class="c-h1">Inscription aux épreuves d'admission</h1>
+  <h2 class="c-h2">Profil personnel</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam natus dolor
+    inventore ut libero repudiandae maxime quisquam obcaecati, molestiae eius,
+    non beatae mollitia ratione amet voluptas. Consequuntur unde ad blanditiis.
+  </p>
+  <form
+    class="c-form"
+    method="get">
+    <div class="c-message c-message--danger u-mbe-md">
+      <p>
+        Bon ... nous avons un sérieux problème de nature relativement globale.
+      </p>
+    </div>
+    <div
+      class="c-stack" data-gap="md">
+      <div class="c-field">
+        <div>
           <label
-            class="c-formfield__label"
-            for="name">
+            class="c-field-label"
+            for="firstname">
+            Prénom
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Veuillez entrer votre prénom</p>
+        </div>
+        <div class="c-field-input" data-width="full">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname" />
+        </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Votre prénom nous pose question</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label
+            class="c-field-label"
+            for="lastname">
             Nom
-            <span class="c-formfield__required">*</span>
+            <span class="c-field-label__required">*</span>
           </label>
-          <div class="c-formfield__help">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Nobis, officia esse eveniet doloribus natus beatae unde,
-              perferendis culpa error.
-            </p>
-          </div>
-          <input
-            class="c-input-text"
-            data-width="full"
-            type="text"
-            id="name"
-            name="name" />
-          <div class="c-formfield__error"><p>Le champs nom est requis</p></div>
         </div>
-        <div class="c-formfield">
-          <div>
-            <label
-              class="c-formfield__label"
-              for="surname">
-              Prénom
-              <span class="c-formfield__required">*</span>
-            </label>
-          </div>
-          <input
-            class="c-input-text"
-            data-width="full"
-            type="text"
-            id="surname"
-            name="surname" />
+        <div class="c-field-hint">
+          <p>Veuillez entrer votre nom</p>
         </div>
-        <div class="c-formfield">
-          <div>
-            <label
-              class="c-formfield__label"
-              for="usualname">
-              Prénom usuel
-            </label>
-            <div class="c-formfield__help">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nobis, officia esse eveniet doloribus natus beatae unde,
-                perferendis culpa error.
-              </p>
-            </div>
-          </div>
+        <div class="c-field-input" data-width="full">
           <input
-            class="c-input-text"
-            data-width="full"
             type="text"
-            id="usualname"
-            name="usualname" />
+            id="lastname"
+            name="lastname" />
         </div>
-        <div class="c-formfield">
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Votre nom nous pose question</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
           <label
-            class="c-formfield__label"
-            for="pays">
+            class="c-field-label"
+            for="income">
+            Revenus
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Veuillez estimer vos revenus</p>
+        </div>
+        <div class="c-field-input" data-width="full">
+          <div class="c-field-input__prefix">Net Mensuel</div>
+          <input
+            type="number"
+            id="income"
+            name="income" />
+          <div class="c-field-input__suffix">EUR</div>
+        </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Vos revenus sont insuffisants pour payer le minerval</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label
+            class="c-field-label"
+            for="phone">
+            Téléphone
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Numéro de téléphone de contact</p>
+        </div>
+        <div class="c-field-input" data-width="full">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+32 474 340 174" />
+          <div class="c-field-input__suffix">
+            <span class="c-icon">
+              {% include "svg/icons/icon_phone.svg" %}
+            </span>
+          </div>
+        </div>
+        <div class="c-field-hint" data-variant="error">
+          <p>Veuillez spécifier un numéro de téléphone au bon format</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label
+            class="c-field-label"
+            for="email">
+            Email
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Adresse email de contact</p>
+        </div>
+        <div class="c-field-input" data-width="full">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="coyote@acme.corp" />
+          <div class="c-field-input__suffix">
+            <span class="c-icon">
+              {% include "svg/icons/icon_email.svg" %}
+            </span>
+          </div>
+        </div>
+        <div class="c-field-hint" data-variant="error">
+          <p>Votre email n'est pas correct</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label
+            class="c-field-label"
+            for="country">
             Pays
-            <span class="c-formfield__required">*</span>
+            <span class="c-field-label__required">*</span>
           </label>
-          <div class="c-formfield__help">
-            <p>Le choix d'un pays c'est agréable</p>
-          </div>
-          <div 
-            class="c-input-select"
-            data-width="full">
-            <select
-              name="pays"
-              id="pays">
-              <option value="">Choisir un pays</option>
-              <option value="be">Belgique</option>
-              <option value="fr">France</option>
-              <option value="zi">Zimbabwe</option>
-            </select>
-          </div>
-          <p class="c-formfield__error">
-            Le choix d'un pays est obligatoire
-          </p>
         </div>
-        <div class="c-formfield">
+        <div class="c-field-hint">
+          <p>Un seul pays, placé sous le signe de la frite</p>
+        </div>
+        <div class="c-field-select" data-width="full">
+          <select
+            name="country"
+            id="country">
+            <option value="belgium">Belgique</option>
+            <option value="france">France</option>
+            <option value="ue">Union Européenne</option>
+            <option value="hors-ue">Hors Union Européenne</option>
+          </select>
+          <div class="c-field-select__caret">
+            <span class="c-icon">
+              {% include "svg/icons/icon_select.svg" %}
+            </span>
+          </div>
+        </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Pas de frites bien préparées dans ce pays</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
           <label
-            class="c-formfield__label"
+            class="c-field-label"
             for="message">
-            Pourquoi aimez-vous le code?
-            <span class="c-formfield__required">*</span>
+            Message
+            <span class="c-field-label__required">*</span>
           </label>
-          <div class="c-formfield__help">
-            <p>Soyez honnête, le serveur vous regarde</p>
-          </div>
+        </div>
+        <div class="c-field-hint">
+          <p>Ecrivez-nous un joli message</p>
+        </div>
+        <div class="c-field-textarea" data-width="full">
           <textarea
-            class="c-input-textarea"
-            data-width="full"
-            id="message"
-            name="message"></textarea>
+            name="message"
+            id="message"></textarea>
         </div>
-        <div class="c-formfield">
-          <div>
-            <label
-              class="c-formfield__label"
-              for="picture">
-              Photo
-              <span class="c-formfield__required">*</span>
-            </label>
-            <div class="c-formfield__help">
-              <p>Format .jpg, 800 par 800 pixels.</p>
-            </div>
-          </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Nous n'acceptons que les messages positifs</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label class="c-field-label">
+            RGPD
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Le RGPD c'est fantastique</p>
+        </div>
+        <div class="c-field-checkbox">
           <input
-            class="c-field-file"
-            type="file"
-            id="picture"
-            name="picture" />
+            type="checkbox"
+            id="rgpd"
+            name="rgpd" />
+          <label for="rgpd">
+            J'autorise le traitement de mes données personelles conformément au
+            RGPD. Mes données seront conservées uniquement dans le cadre de
+            cette inscription.
+          </label>
         </div>
-        <div class="c-formfield">
-          <div>
-            <p class="c-formfield__label">
-              Données personnelles
-              <span class="c-formfield__required">*</span>
-            </p>
-            <div class="c-formfield__help">
-              <p>
-                Vos données sont uniquement utilisées dans le cadre de cette
-                inscription. Elles seront supprimées dans un an si votre
-                inscription n'est pas effective.
-              </p>
-            </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Pas de consentement, pas d'inscription</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label class="c-field-label">
+            Photo
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-file">
+          <input
+            type="file"
+            id="photo"
+            name="photo" />
+        </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Une belle photo on a dit</p>
+        </div>
+      </div>
+      <fieldset class="c-fieldset c-field">
+        <legend class="c-field-label">Bacheliers</legend>
+        <div class="c-field-hint">
+          <p>Choisissez vos bacheliers préférés</p>
+        </div>
+        <div class="c-stack">
+          <div class="c-field-checkbox">
+            <input
+              type="checkbox"
+              id="bacmm"
+              value="mm"
+              name="bac" />
+            <label
+              for="bacmm">
+              Bachelier multimédia
+            </label>
           </div>
-          <div class="c-field-toggle">
-            <label class="c-field-toggle__label">
-              <div class="c-input-toggle">
-                <input
-                  type="checkbox"
-                  name="rgpd" />
-              </div>
-              J'autorise le traitement de mes données personelles. Lorem
-              ipsum dolor sit, amet consectetur adipisicing elit. Nam
-              ducimus in magni reiciendis odit cumque minima, aliquid
-              nostrum deserunt iure quibusdam laudantium expedita
-              reprehenderit sunt, unde ipsa totam provident eligendi.
+          <div class="c-field-checkbox">
+            <input
+              type="checkbox"
+              value="rea"
+              id="bacrea"
+              name="bac" />
+            <label
+              for="bacrea">
+              Bachelier réalisation
+            </label>
+          </div>
+          <div class="c-field-checkbox">
+            <input
+              type="checkbox"
+              value="ms"
+              id="bacms"
+              name="bac" />
+            <label
+              for="bacms">
+              Bachelier montage et scripte
             </label>
           </div>
         </div>
-      </div>
-      <div class="c-formsection">
-        <h2 class="c-h3 c-h3--border">Bacheliers</h2>
-        <div class="c-formfield">
-          <p class="c-formfield__label">
-            Choix d'un bachelier
-            <span class="c-formfield__required">*</span>
-          </p>
-          <div class="c-formfield__help">
-            <p>Petit texte d'aide</p>
+        <div 
+          class="c-field-hint"
+          data-variant="error">
+          <p>Un seul bachelier trouve grâce à nos yeux</p>
+        </div>
+      </fieldset>
+      <fieldset class="c-fieldset c-field">
+        <legend class="c-field-label">Master</legend>
+        <div class="c-field-hint">
+          <p>Choisissez un seul master</p>
+        </div>
+        <div class="c-stack">
+          <div class="c-field-radio">
+            <input
+              type="radio"
+              name="favmaster"
+              id="mastermm"
+              value="mm"
+              required />
+            <label
+              for="mastermm">
+              Master multimédia
+            </label>
           </div>
-          <ul class="c-vlist">
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    name="bacmm" />
-                  Bachelier multimédia
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    name="bacrea" />
-                    Bachelier réalisation
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    name="bacms" />
-                    Bachelier montage et scripte
-                </label>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="c-formsection">
-        <h2 class="c-h3 c-h3--border">Masters</h2>
-        <div class="c-formfield">
-          <div>
-            <p class="c-formfield__label">
-              Choix d'un master
-              <span class="c-formfield__required">*</span>
-            </p>
-            <div class="c-formfield__help">
-              <p>Petit texte d'aide</p>
-            </div>
+          <div class="c-field-radio">
+            <input
+              type="radio"
+              name="favmaster"
+              id="masterrea"
+              value="rea"
+              required />
+            <label
+              for="masterrea">
+              Master réalisation
+            </label>
           </div>
-          <ul class="c-vlist">
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    name="mastermm" />
-                    Master multimédia
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    name="masterrea" />
-                    Master réalisation qu'ils sont vraiement les plus beaux
-                    comme cela on voit ce que cela donne quand on passe sur
-                    deux lignes.
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-checkbox">
-                <label
-                  class="c-field-checkbox__label">
-                  <input
-                    class="c-input-checkbox"
-                    type="checkbox"
-                    id="masterms"
-                    name="masterms" />
-                    Master montage et scripte
-                </label>
-              </div>
-            </li>
-          </ul>
-          <p class="c-formfield__error">
-            Non, vous ne serez pas le prochain Ken Loach
-          </p>
+          <div class="c-field-radio">
+            <input
+              type="radio"
+              name="favmaster"
+              id="masterms"
+              value="ms"
+              required />
+            <label
+              for="masterms">
+              Master montage et scripte
+            </label>
+          </div>
+        </div>
+        <div 
+          class="c-field-hint"
+          data-variant="error">
+          <p>Un seul master trouve grâce à nos yeux</p>
+        </div>
+      </fieldset>
+      <div class="c-field">
+        <div>
+          <label
+            class="c-field-label"
+            for="mydate">
+            Date
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div class="c-field-hint">
+          <p>Veuillez entrer une date</p>
+        </div>
+        <div class="c-field-date" data-width="full">
+          <input
+            type="date"
+            id="mydate"
+            name="mydate" />
+        </div>
+        <div
+          class="c-field-hint"
+          data-variant="error">
+          <p>Veuillez entrer une date dans le futur</p>
         </div>
       </div>
-      <div class="c-formsection">
-        <h2 class="c-h3 c-h3--border">Professeur</h2>
-        <p>
-          Quel est votre professeur de multimédia préféré ? Quelle que soit
-          votre réponse, un seul professeur sera retenu et il possède un
-          café en bords de Meuse.
-        </p>
-        <div class="c-formfield">
-          <p class="c-formfield__label">
-            Choix d'un professeur
-            <span class="c-formfield__required">*</span>
-          </p>
-          <ul class="c-vlist">
-            <li>
-              <div class="c-field-radio">
-                <label
-                  class="c-field-radio__label">
-                  <input
-                    class="c-input-radio"
-                    type="radio"
-                    name="prof"
-                    value="Julien Moreau" />
-                    Julien Moreau
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-radio">
-                <label
-                  class="c-field-radio__label">
-                  <input
-                    class="c-input-radio"
-                    type="radio"
-                    name="prof"
-                    value="Christophe Pesesse" />
-                    Christophe Pesesse qui est vraiment le plus agile d'entre
-                    nous et qui est aussi là depuis le plus longtemps.
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="c-field-radio">
-                <label
-                  class="c-field-radio__label">
-                  <input
-                    class="c-input-radio"
-                    type="radio"
-                    name="prof"
-                    value="Jérôme Coupé" />
-                    Jérôme Coupé
-                </label>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <button 
+          class="c-button"
+          data-variant="primary">
+          Enregistrer
+        </button>
       </div>
-      <div class="c-formsection">
-        <button class="c-button c-button--primary">Enregistrer</button>
-      </div>
-    </form>
-  </div>
+    </div>
+  </form>
+</div>
 {% endblock %}

@@ -1,5 +1,5 @@
-<div class="c-mobilemenu">
-  <div class="c-mobilemenu__header">
+<div class="c-mobilemenu js-mobilemenu">
+  <div class="c-mobilemenu__start">
     <button class="c-mobilemenu__close js-menutrigger" aria-label="open navigation">
       {% include "svg/menuclose.svg" %}
     </button>
@@ -19,18 +19,22 @@
       {% endfor %}
     </nav>
   </div>
-  <div class="c-mobilemenu__footer">
-    <ul class="c-mobilenav">
-      <li class="c-mobilenav__item">
-        <a
-          class="c-mobilenav__link"
-          href="#">
-          <span class="c-icon c-icon--small">
-            {% include "svg/icons/icon_logout.svg" %}
-          </span>
-          Logout
-        </a>
-      </li>
-    </ul>
+  <div class="c-mobilemenu__end">
+    {% for item in usernav %}
+      {% if loop.first %}<ul class="c-mobilenav">{% endif %}
+        <li class="c-mobilenav__item">
+          <a
+            class="c-mobilenav__link"
+            href="{{ item.navUrl }}">
+            {% if item.navIcon %}
+              <span class="c-icon">
+                {% include item.navIcon %}
+              </span>
+            {% endif %}
+            {{ item.navLabel }}
+          </a>
+        </li>
+      {% if loop.last %}</ul>{% endif %}
+    {% endfor %}
   </div>
 </div>

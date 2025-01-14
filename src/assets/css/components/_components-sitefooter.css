@@ -4,10 +4,11 @@
 
 .c-sitefooter {
   display: block;
+  border-block-start: 1px solid var(--iad-gray-700);
 }
 
 .c-sitefooter__content {
-  padding-block: 12px;
+  padding: var(--iad-space-md);
 }
 
 .c-sitefooter__copyright {

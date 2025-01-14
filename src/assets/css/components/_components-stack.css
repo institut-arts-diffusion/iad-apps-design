@@ -1,0 +1,41 @@
+/* =======================================
+=stack
+======================================= */
+
+.c-stack {
+  --stack-gap: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: var(--stack-gap);
+}
+
+.c-stack[data-gap="xxs"] {
+  --stack-gap: var(--iad-space-xxs);
+}
+
+.c-stack[data-gap="xs"] {
+  --stack-gap: var(--iad-space-xs);
+}
+
+.c-stack[data-gap="sm"] {
+  --stack-gap: var(--iad-space-sm);
+}
+
+.c-stack[data-gap="md"] {
+  --stack-gap: var(--iad-space-md);
+}
+
+.c-stack[data-gap="lg"] {
+  --stack-gap: var(--iad-space-lg);
+}
+
+.c-stack[data-gap="xl"] {
+  --stack-gap: var(--iad-space-xl);
+}
+
+.c-stack[data-gap="xxl"] {
+  --stack-gap: var(--iad-space-xxl);
+}

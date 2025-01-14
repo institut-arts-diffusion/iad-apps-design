@@ -44,46 +44,67 @@ permalink: index.html
             doloremque nam consequatur esse laborum illo sint a at perferendis
             beatae temporibus error repudiandae nostrum molestiae labore numquam.
           </p>
-          <div class="c-message">
+          <div class="c-message u-mbe-base">
             <p>
               Les inscriptions sont ouvertes jusqu'au mardi 20 juillet 2024 à
               minuit.
             </p>
           </div>
-          <div class="c-formfield">
-            <div>
-              <label
-                class="c-formfield__label"
-                for="email">
-                Email
-                <span class="c-formfield__required">*</span>
-              </label>
-            </div>
-            <input
-              class="c-input-text"
-              data-width="full"
-              type="text"
-              id="email"
-              name="email" />
-          </div>
-          <div class="c-formfield">
-            <div class="c-field-checkbox">
-              <label
-                class="c-field-checkbox__label">
+          <div 
+            class="c-stack"
+            data-gap="base">
+            <div class="c-field">
+              <div>
+                <label
+                  class="c-field-label"
+                  for="email">
+                  Email
+                  <span class="c-field-label__required">*</span>
+                </label>
+              </div>
+              <!-- <div class="c-field-hint">
+                  <p>Veuillez entrer votre numéro de téléphone</p>
+                </div> -->
+              <div class="c-input" data-width="full">
                 <input
-                  class="c-field-checkbox__input"
-                  type="checkbox"
-                  name="RGPD" />
-                  J'accepte les termes du RGPD
-              </label>
+                  class="c-input__field"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required />
+                <div>
+                  <span class="c-icon" aria-hidden="true">
+                    {% include "svg/icons/icon_email.svg" %}
+                  </span>
+                </div>
+              </div>
+              <!-- <div class="c-field-hint" data-theme="error">
+                  <p>This is a problem with your name</p>
+                </div> -->
             </div>
-          </div>
-          <div class="c-formfield">
-            <input
-              class="c-button c-button--primary"
-              data-width="full"
-              type="button"
-              value="Se connecter" />
+            <div class="c-field">
+              <!-- <div class="c-field-hint">
+                <p>Le RGPD c'est fantastique</p>
+              </div> -->
+              <div class="c-checkbox">
+                <input type="checkbox" id="rgpd">
+                <label for="rgpd">
+                  J'autorise le traitement de mes données personelles conformément au
+                  RGPD.
+                </label>
+              </div>
+              <!-- <div class="c-field-hint" data-theme="error">
+                <p>This is a problem with the RGPD</p>
+              </div> -->
+            </div>
+            <div>
+              <input
+                class="c-button"
+                data-variant="primary"
+                data-width="full"
+                type="button"
+                value="Se connecter" />
+            </div>
           </div>
         </form>
       </div>

@@ -1,8 +1,11 @@
 /* =======================================
-=headernav
+=mainnav
 ======================================= */
 
-.c-headernav {
+.c-mainnav {
+  --mainnavlink-color: var(--iad-white);
+  --mainnavlink-color-interactive: var(--iad-gray-700);
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10,30 +13,27 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 24px;
+  gap: 6px;
 }
 
-.c-headernav__link {
+.c-mainnav__link {
   display: inline-block;
-  padding-block: 12px;
+  padding: 6px;
   font-size: 1rem;
-  color: var(--iad-gray-100);
-  font-weight: 500;
+  color: var(--mainnavlink-color);
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-decoration: none;
+  transition: color 0.2s ease-out;
 
   &:focus,
   &:hover {
     text-decoration: none;
+    color: var(--mainnavlink-color-interactive);
   }
 }
 
-.c-headernav__item:last-child .c-headernav__link {
-  padding-inline-end: 0;
-}
-
-.c-headernav__link:has(.c-icon) {
+.c-mainnav__link:has(.c-icon) {
   display: inline-flex;
   flex-direction: row;
   justify-content: start;

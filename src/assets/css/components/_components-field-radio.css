@@ -1,0 +1,15 @@
+/* =======================================
+=radio field
+======================================= */
+
+.c-field-radio {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  column-gap: var(--iad-space-xs);
+}
+
+.c-field-radio input[type="radio"] {
+  flex: 0 0 auto;
+}

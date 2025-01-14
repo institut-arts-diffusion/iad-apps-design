@@ -1,0 +1,39 @@
+/* =======================================
+=input field
+======================================= */
+
+/*
+- Can be used for all input fields (text, email, password, tel, url, number) 
+*/
+
+.c-field-file {
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.c-field-file > input {
+  flex: 1 1 100%;
+}
+
+.c-field-file > input::file-selector-button {
+  --btn-border: var(--iad-gray-600);
+  --btn-background: var(--iad-white);
+  --btn-color: var(--iad-gray-100);
+  --btn-radius: 3px;
+
+  display: inline-block;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--btn-border);
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+  padding: 6px 12px;
+  line-height: 1;
+  border-radius: var(--btn-radius);
+  font-size: calc(14 / 16 * 1rem);
+
+  &:hover,
+  &:focus {
+    --btn-border: var(--iad-gray-400);
+  }
+}
