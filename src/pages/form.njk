@@ -1,12 +1,23 @@
 ---
-permalink: form/refactor/index.html
+permalink: form/index.html
 ---
 
 {% extends "layouts/base.njk" %}
 {% block content %}
 <div class="l-container l-container--lg">
-  <h1 class="c-h1">Inscription aux épreuves d'admission</h1>
-  <h2 class="c-h2">Profil personnel</h2>
+  <ul class="c-breadcrumbs u-mbe-xl">
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="#">
+        <span class="c-icon" aria-label="home">
+          {% include "svg/icons/icon_home.svg" %}
+        </span>
+      </a>
+    </li>
+    <li class="c-breadcrumbs__item">
+      <a class="c-breadcrumbs__link" href="#">Inscription</a>
+    </li>
+  </ul>
+  <h1 class="c-h1">Profil personnel</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam natus dolor
     inventore ut libero repudiandae maxime quisquam obcaecati, molestiae eius,
