@@ -8,7 +8,8 @@
 }
 
 .c-sitefooter__content {
-  padding: var(--iad-space-md);
+  padding-inline: var(--iad-space-md);
+  padding-block: var(--iad-space-sm);
 }
 
 .c-sitefooter__copyright {
