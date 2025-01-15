@@ -29,6 +29,7 @@
   border: none;
   width: 100%;
   padding-inline-end: calc(18px + 3px);
+  cursor: inherit;
 }
 
 .c-field-select__caret {
@@ -46,4 +47,12 @@
 
 .c-field-select[data-width="full"] {
   inline-size: 100%;
+}
+
+/* =======================================
+=disabled
+======================================= */
+
+.c-field-select:has(select[disabled]) {
+  background-color: var(--iad-gray-800);
 }

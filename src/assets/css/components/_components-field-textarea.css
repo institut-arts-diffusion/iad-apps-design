@@ -23,6 +23,7 @@
 
 .c-field-textarea textarea {
   inline-size: 100%;
+  background-color: transparent;
 }
 
 /* =======================================
@@ -31,4 +32,12 @@
 
 .c-field-textarea[data-width="full"] {
   inline-size: 100%;
+}
+
+/* =======================================
+=disabled
+======================================= */
+
+.c-field-textarea:has(textarea[disabled]) {
+  background-color: var(--iad-gray-800);
 }

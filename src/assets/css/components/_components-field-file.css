@@ -37,3 +37,18 @@
     --btn-border: var(--iad-gray-400);
   }
 }
+
+/* =======================================
+=disabled
+======================================= */
+
+input[type="file"][disabled] {
+  color: var(--iad-gray-500);
+  cursor: not-allowed;
+}
+
+input[type="file"][disabled]::file-selector-button {
+  background-color: var(--iad-gray-800);
+  border-color: var(--iad-gray-700);
+  cursor: not-allowed;
+}

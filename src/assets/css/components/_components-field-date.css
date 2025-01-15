@@ -18,6 +18,7 @@
 .c-field-date > input {
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 
 /* =======================================
@@ -26,4 +27,12 @@
 
 .c-field-date[data-width="full"] {
   inline-size: 100%;
+}
+
+/* =======================================
+=disabled
+======================================= */
+
+.c-field-date:has(input[disabled]) {
+  background-color: var(--iad-gray-800);
 }

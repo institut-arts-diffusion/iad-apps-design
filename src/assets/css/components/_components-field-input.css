@@ -36,6 +36,7 @@
   margin: 0;
   padding: 0;
   inline-size: 100%;
+  background-color: transparent;
 }
 
 /* =======================================
@@ -44,4 +45,12 @@
 
 .c-field-input[data-width="full"] {
   inline-size: 100%;
+}
+
+/* =======================================
+=disabled
+======================================= */
+
+.c-field-input:has(input[disabled]) {
+  background-color: var(--iad-gray-800);
 }
