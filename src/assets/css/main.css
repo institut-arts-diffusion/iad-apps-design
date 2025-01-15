@@ -50,6 +50,7 @@
 @import "components/_components-stack.css" layer(components);
 @import "components/_components-status.css" layer(components);
 @import "components/_components-statusnav.css" layer(components);
+@import "components/_components-suptitle.css" layer(components);
 @import "components/_components-tabs.css" layer(components);
 @import "components/_components-titles.css" layer(components);
 @import "components/_components-usernav.css" layer(components);
