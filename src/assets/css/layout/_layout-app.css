@@ -3,54 +3,50 @@
 ======================================= */
 
 .l-app {
-  --app-menu-size: 240px;
-  --app-border: var(--iad-gray-700);
+  --app-sidebar-size: 280px;
+  --app-main-block-padding: clamp(30px, 1.339rem + 2.679vi, 60px);
 
-  min-block-size: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-block-size: 100dvh;
 }
 
-.l-app__menu {
-  --app-menu-background: var(--iad-gray-900);
+.l-app[data-sidebar] {
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
 
-  @media (width >= 750px) {
-    position: fixed;
-    inset-block-start: 0;
-    inset-block-end: 0;
-    inset-inline-start: 0;
-    inline-size: var(--app-menu-size);
-    background-color: var(--app-menu-background);
-    border-inline-end: 1px solid var(--app-border);
-    overflow-y: auto;
+  @media (width >= 1024px) {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: var(--app-sidebar-size) minmax(0, 1fr);
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
   }
 }
 
-.l-app__content {
-  --app-content-inline-padding: 18px;
-
-  padding-inline: var(--app-content-inline-padding);
-
-  @media (width >= 750px) {
-    --app-content-inline-padding: max(24px, 3vi);
-
-    min-block-size: 100vh;
-    margin-inline-start: var(--app-menu-size);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
+.l-app__header {
+  grid-area: header;
 }
 
 .l-app__main {
-  flex: 1 1 100%;
-  padding-block: 30px;
+  grid-area: main;
+  padding-block: var(--app-main-block-padding);
 }
 
 .l-app__footer {
-  flex: 0 0 auto;
-  padding-block: 18px;
+  grid-area: footer;
+}
 
-  & p {
-    margin-block-end: 0;
-  }
+.l-app__sidebar {
+  grid-area: sidebar;
 }

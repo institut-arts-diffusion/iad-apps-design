@@ -8,10 +8,19 @@
     <script type="module" src="/assets/js/main.bundle.js"></script>
   </head>
   <body>
-    {% include "partials/siteheader.njk" %}
-    <main class="c-maincontent">
-      {% block content %}{% endblock %}
-    </main>
-    {% include "partials/sitefooter.njk" %}
+
+    <div class="l-app">
+      <div class="l-app__header">
+        {% include "partials/siteheader.njk" %}
+      </div>
+      <div class="l-app__main">
+        {% block content %}{% endblock %}
+      </div>
+      <!-- .l-app-sidebar goes here -->
+      <div class="l-app__footer">
+        {% include "partials/sitefooter.njk" %}
+      </div>
+    </div>
+    
   </body>
 </html>

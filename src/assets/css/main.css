@@ -38,8 +38,8 @@
 @import "components/_components-icon.css" layer(components);
 @import "components/_components-lists.css" layer(components);
 @import "components/_components-login.css" layer(components);
-@import "components/_components-maincontent.css" layer(components);
 @import "components/_components-mainnav.css" layer(components);
+@import "components/_components-message.css" layer(components);
 @import "components/_components-mobilemenu.css" layer(components);
 @import "components/_components-mobilenav.css" layer(components);
 @import "components/_components-progressbar.css" layer(components);
