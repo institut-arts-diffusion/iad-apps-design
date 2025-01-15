@@ -1,16 +1,28 @@
 /* =======================================
-=fild hint
+=field hint
 ======================================= */
 
 .c-field-hint {
   font-size: calc(14 / 16 * 1rem);
-  color: var(--iad-gray-300);
+  color: var(--iad-gray-400);
 }
 
 .c-field-hint > *:last-child {
   margin-block-end: 0;
 }
 
-.c-field-hint[data-variant="error"] {
+/* =======================================
+=variants
+======================================= */
+
+.c-field-hint[data-variant="danger"] {
   color: var(--iad-ui-danger-dark);
+}
+
+.c-field-hint[data-variant="success"] {
+  color: var(--iad-ui-success-dark);
+}
+
+.c-field-hint[data-variant="warning"] {
+  color: var(--iad-ui-warning-dark);
 }

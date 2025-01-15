@@ -1,0 +1,51 @@
+/* =======================================
+=message
+======================================= */
+
+.c-message {
+  --msg-background: var(--iad-brand-washed);
+  --msg-border: var(--iad-brand);
+  --msg-radius: var(--iad-radius);
+  --msg-link-color: var(--iad-brand-dark);
+
+  padding: 18px;
+  background-color: var(--msg-background);
+  border: 1px solid var(--msg-border);
+  border-radius: var(--msg-radius);
+  margin-block-end: 1rem;
+
+  & > *:last-child {
+    margin-block-end: 0;
+  }
+
+  & a {
+    color: var(--msg-link-color);
+  }
+}
+
+.c-message__title {
+  color: var(--iad-gray-100);
+  margin-block-start: 0;
+  margin-block-end: 0.6em;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--fontstack-alt);
+}
+
+.c-message[data-variant="warning"] {
+  --msg-background: var(--iad-ui-warning-washed);
+  --msg-border: var(--iad-ui-warning);
+  --msg-link-color: var(--iad-ui-warning-dark);
+}
+
+.c-message[data-variant="danger"] {
+  --msg-background: var(--iad-ui-danger-washed);
+  --msg-border: var(--iad-ui-danger);
+  --msg-link-color: var(--iad-ui-danger-dark);
+}
+
+.c-message[data-variant="success"] {
+  --msg-background: var(--iad-ui-success-washed);
+  --msg-border: var(--iad-ui-success);
+  --msg-link-color: var(--iad-ui-success-dark);
+}
