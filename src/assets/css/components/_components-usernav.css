@@ -17,18 +17,19 @@
   display: inline-block;
   padding: 6px 12px;
   font-size: 1rem;
-  color: var(--mainnavlink-color);
+  color: var(--iad-white);
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-decoration: none;
-  transition: color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
   border: 1px solid var(--iad-gray-600);
   border-radius: var(--iad-radius);
 
   &:focus,
   &:hover {
     text-decoration: none;
-    color: var(--mainnavlink-color-interactive);
+    color: var(--iad-white);
+    border-color: var(--iad-gray-700);
   }
 }
 

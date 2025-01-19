@@ -4,38 +4,107 @@
 
 .c-stack {
   --stack-gap: 0;
+  --stack-justify: start;
+  --stack-align: stretch;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
+  flex-direction: row;
+  justify-content: var(--stack-justify);
+  align-items: var(--stack-align);
   gap: var(--stack-gap);
 }
 
-.c-stack[data-gap="xxs"] {
+/* =======================================
+=direction
+======================================= */
+
+.c-stack--row,
+.c-stack[data-direction="row"] {
+  flex-direction: row;
+}
+
+.c-stack--column,
+.c-stack[data-direction="column"] {
+  flex-direction: column;
+}
+
+/* =======================================
+=justify
+======================================= */
+
+.c-stack--justify-start,
+.c-stack[data-justify="start"] {
+  --stack-justify: start;
+}
+
+.c-stack--justify-end,
+.c-stack[data-justify="end"] {
+  --stack-justify: end;
+}
+
+.c-stack--justify-center,
+.c-stack[data-justify="center"] {
+  --stack-justify: center;
+}
+
+/* =======================================
+=align
+======================================= */
+
+.c-stack--align-start,
+.c-stack[data-align="start"] {
+  --stack-align: start;
+}
+
+.c-stack--align-end,
+.c-stack[data-align="end"] {
+  --stack-align: end;
+}
+
+.c-stack--align-center,
+.c-stack[data-align="center"] {
+  --stack-align: center;
+}
+
+/* =======================================
+=gaps
+======================================= */
+
+.c-stack[data-gap="xxs"],
+.c-stack--gap-xss {
   --stack-gap: var(--iad-space-xxs);
 }
 
-.c-stack[data-gap="xs"] {
+.c-stack[data-gap="xs"],
+.c-stack--gap-xs {
   --stack-gap: var(--iad-space-xs);
 }
 
-.c-stack[data-gap="sm"] {
+.c-stack[data-gap="sm"],
+.c-stack--gap-sm {
   --stack-gap: var(--iad-space-sm);
 }
 
-.c-stack[data-gap="md"] {
+.c-stack[data-gap="md"],
+.c-stack--gap-md {
   --stack-gap: var(--iad-space-md);
 }
 
-.c-stack[data-gap="lg"] {
+.c-stack[data-gap="lg"],
+.c-stack--gap-lg {
   --stack-gap: var(--iad-space-lg);
 }
 
-.c-stack[data-gap="xl"] {
+.c-stack[data-gap="xl"],
+.c-stack--gap-xl {
   --stack-gap: var(--iad-space-xl);
 }
 
-.c-stack[data-gap="xxl"] {
+.c-stack[data-gap="xxl"],
+.c-stack--gap-xxl {
   --stack-gap: var(--iad-space-xxl);
 }

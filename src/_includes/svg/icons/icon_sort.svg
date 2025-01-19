@@ -1,0 +1,16 @@
+<svg
+  aria-hidden="true"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M11.5996 9.29256L15.5996 5.29256L16.3067 4.58545L17.0138 5.29256L21.0138 9.29256L19.5996 10.7068L17.3067 8.41388V20.0002H15.3067V8.41388L13.0138 10.7068L11.5996 9.29256Z" />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M3 15.707L7 19.707L7.70711 20.4141L8.41421 19.707L12.4142 15.707L11 14.2927L8.70711 16.5856V4.99985H6.70711V16.5856L4.41421 14.2927L3 15.707Z" />
+  </g>
+</svg>

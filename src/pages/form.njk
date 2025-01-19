@@ -33,8 +33,7 @@ permalink: form/index.html
         Bon ... nous avons un sérieux problème de nature relativement globale.
       </p>
     </div>
-    <div
-      class="c-stack" data-gap="md">
+    <div class="c-stack c-stack--column c-stack--gap-md">
       <div class="c-field">
         <div>
           <label
@@ -272,41 +271,47 @@ permalink: form/index.html
         <div class="c-field-hint">
           <p>Choisissez vos bacheliers préférés</p>
         </div>
-        <div class="c-stack">
-          <div class="c-field-checkbox">
-            <input
-              type="checkbox"
-              id="bacmm"
-              value="mm"
-              name="bac" />
-            <label
-              for="bacmm">
-              Bachelier multimédia
-            </label>
-          </div>
-          <div class="c-field-checkbox">
-            <input
-              type="checkbox"
-              value="rea"
-              id="bacrea"
-              name="bac" />
-            <label
-              for="bacrea">
-              Bachelier réalisation
-            </label>
-          </div>
-          <div class="c-field-checkbox">
-            <input
-              type="checkbox"
-              value="ms"
-              id="bacms"
-              name="bac" />
-            <label
-              for="bacms">
-              Bachelier montage et scripte
-            </label>
-          </div>
-        </div>
+        <ul class="c-stack c-stack--column">
+          <li>
+            <div class="c-field-checkbox">
+              <input
+                type="checkbox"
+                id="bacmm"
+                value="mm"
+                name="bac" />
+              <label
+                for="bacmm">
+                Bachelier multimédia
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="c-field-checkbox">
+              <input
+                type="checkbox"
+                value="rea"
+                id="bacrea"
+                name="bac" />
+              <label
+                for="bacrea">
+                Bachelier réalisation
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="c-field-checkbox">
+              <input
+                type="checkbox"
+                value="ms"
+                id="bacms"
+                name="bac" />
+              <label
+                for="bacms">
+                Bachelier montage et scripte
+              </label>
+            </div>
+          </li>
+        </ul>
         <div 
           class="c-field-hint"
           data-variant="danger">
@@ -318,44 +323,50 @@ permalink: form/index.html
         <div class="c-field-hint">
           <p>Choisissez un seul master</p>
         </div>
-        <div class="c-stack">
-          <div class="c-field-radio">
-            <input
-              type="radio"
-              name="favmaster"
-              id="mastermm"
-              value="mm"
-              required />
-            <label
-              for="mastermm">
-              Master multimédia
-            </label>
-          </div>
-          <div class="c-field-radio">
-            <input
-              type="radio"
-              name="favmaster"
-              id="masterrea"
-              value="rea"
-              required />
-            <label
-              for="masterrea">
-              Master réalisation
-            </label>
-          </div>
-          <div class="c-field-radio">
-            <input
-              type="radio"
-              name="favmaster"
-              id="masterms"
-              value="ms"
-              required />
-            <label
-              for="masterms">
-              Master montage et scripte
-            </label>
-          </div>
-        </div>
+        <ul class="c-stack  c-stack--column">
+          <li>
+            <div class="c-field-radio">
+              <input
+                type="radio"
+                name="favmaster"
+                id="mastermm"
+                value="mm"
+                required />
+              <label
+                for="mastermm">
+                Master multimédia
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="c-field-radio">
+              <input
+                type="radio"
+                name="favmaster"
+                id="masterrea"
+                value="rea"
+                required />
+              <label
+                for="masterrea">
+                Master réalisation
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="c-field-radio">
+              <input
+                type="radio"
+                name="favmaster"
+                id="masterms"
+                value="ms"
+                required />
+              <label
+                for="masterms">
+                Master montage et scripte
+              </label>
+            </div>
+          </li>
+        </ul>
         <div 
           class="c-field-hint"
           data-variant="danger">

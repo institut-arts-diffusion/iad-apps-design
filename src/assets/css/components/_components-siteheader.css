@@ -6,12 +6,15 @@
   --siteheader-padding-block: var(--iad-space-md);
   --siteheader-padding-inline: var(--iad-space-md);
   --siteheader-background: var(--iad-gray-100);
-  --siteheader-color: var(--iad-white);
+  --siteheader-border: var(--iad-gray-700);
 
   padding-block: var(--siteheader-padding-block);
   padding-inline: var(--siteheader-padding-inline);
   background-color: var(--siteheader-background);
-  color: var(--iad-white);
+
+  @media (width >= 750px) {
+    --siteheader-padding-block: var(--iad-space-md);
+  }
 }
 
 .c-siteheader__content {
@@ -52,7 +55,7 @@
 
 .c-siteheader__hamburger > a,
 .c-siteheader__hamburger svg {
-  color: currentColor;
+  color: var(--iad-white);
   display: block;
 }
 

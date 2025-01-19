@@ -4,10 +4,14 @@
 
 .c-button {
   --btn-background: var(--iad-gray-700);
-  --btn-background-interactive: var(--iad-gray-700);
+  --btn-background-interactive: color-mix(
+    in hsl,
+    black 6%,
+    var(--btn-background)
+  );
 
   --btn-border: var(--iad-gray-700);
-  --btn-border-interactive: var(--iad-gray-700);
+  --btn-border-interactive: color-mix(in hsl, black 6%, var(--btn-border));
 
   --btn-color: var(--iad-gray-100);
   --btn-color-interactive: var(--iad-gray-300);
@@ -18,7 +22,7 @@
   --btn-gap: 6px;
 
   --btn-padding-inline: 18px;
-  --btn-padding-block: 6px;
+  --btn-padding-block: 10px;
 
   --btn-radius: var(--iad-radius);
 
@@ -40,6 +44,7 @@
   border-radius: var(--btn-radius);
   font-weight: var(--btn-font-weigth);
   font-size: var(--btn-font-size);
+  line-height: 1;
 
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
 
@@ -56,16 +61,10 @@
 ======================================= */
 
 .c-button[data-variant="primary"] {
-  --btn-background: var(--iad-brand-dark);
-  --btn-border: var(--iad-brand-dark);
+  --btn-background: var(--iad-gray-100);
+  --btn-border: var(--iad-gray-100);
   --btn-color: var(--iad-white);
 
-  --btn-background-interactive: color-mix(
-    in hsl,
-    black 12%,
-    var(--iad-brand-dark)
-  );
-  --btn-border-interactive: color-mix(in hsl, black 12%, var(--iad-brand-dark));
   --btn-color-interactive: var(--iad-white);
 }
 
@@ -74,16 +73,6 @@
   --btn-border: var(--iad-ui-danger-dark);
   --btn-color: var(--iad-white);
 
-  --btn-background-interactive: color-mix(
-    in hsl,
-    black 12%,
-    var(--iad-ui-danger-dark)
-  );
-  --btn-border-interactive: color-mix(
-    in hsl,
-    black 12%,
-    var(--iad-ui-danger-dark)
-  );
   --btn-color-interactive: var(--iad-white);
 }
 
@@ -91,7 +80,8 @@
 =variants
 ======================================= */
 
-.c-button[data-variant="plain"] {
+.c-button[data-variant="plain"],
+.c-button--plain {
   --btn-background: transparent;
   --btn-border: transparent;
   --btn-color: var(--iad-gray-100);
@@ -101,7 +91,8 @@
   --btn-color-interactive: var(--iad-gray-100);
 }
 
-.c-button[data-variant="outlined"] {
+.c-button[data-variant="outlined"],
+.c-button--outlined {
   --btn-background: transparent;
   --btn-border: var(--iad-gray-700);
   --btn-color: var(--iad-gray-100);
@@ -115,16 +106,26 @@
 =sizes
 ======================================= */
 
-.c-button[data-size="sm"] {
-  --btn-padding-inline: 6px;
+.c-button[data-size="sm"],
+.c-button--sm {
+  --btn-padding-inline: 12px;
   --btn-padding-block: 6px;
   font-size: calc(14 / 16 * 1rem);
 }
 
-.c-button[data-size="xs"] {
+.c-button[data-size="xs"],
+.c-button--xs {
+  --btn-gap: 3px;
+  --btn-padding-inline: 6px;
+  --btn-padding-block: 3px;
+  font-size: calc(13 / 16 * 1rem);
+}
+
+.c-button[data-size="xxs"],
+.c-button--xxs {
   --btn-gap: 3px;
   --btn-padding-inline: 3px;
-  --btn-padding-block: 1px;
+  --btn-padding-block: 3px;
   font-size: calc(13 / 16 * 1rem);
 }
 
@@ -132,7 +133,8 @@
 =widths
 ======================================= */
 
-.c-button[data-width="full"] {
+.c-button[data-width="full"],
+.c-button--fullwidth {
   inline-size: 100%;
 }
 

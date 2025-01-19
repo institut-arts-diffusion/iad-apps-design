@@ -41,150 +41,173 @@ permalink: cours/detail/index.html
       <table>
         <thead>
           <tr>
-            <th scope="col">Elèves</th>
+            <th scope="col" width="50%">
+              <button>
+                Elèves
+                <span class="c-icon">
+                  {% include "svg/icons/icon_chevron_down.svg" %}
+                </span>
+              </button>
+            </th>
             <th scope="col">Statuts</th>
-            <th scope="col">Points</th>
-            <th class="u-text-end" scope="col">Actions</th>
+            <th scope="col" class="u-text-end">Points</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Marie-Dominique de Laquenelle</th>
+            <th scope="row">de Laquenelle Marie-Dominique</th>
             <td>
               <span class="c-badge" data-theme="success">Crédit résiduel</span>
             </td>
             <td>
-              42 / 60
-            </td>
-            <td class="u-text-end">
-              <button
-                class="c-button"
-                data-size="xs"
-                data-variant="outlined"
-                aria-label="options">
-                <span class="c-icon">
-                  {% include "svg/icons/icon_options.svg" %}
-                </span>
-              </button>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2" value="42" disabled>
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary"
+                  disabled>
+                  Sauver
+                </button>
+              </div>
             </td>
           </tr>
           <tr>
-            <th scope="row">Jérôme Coupé</th>
+            <th scope="row">Pesesse Christophe</th>
             <td>
               <span class="c-badge" data-theme="warning">A encoder</span>
             </td>
             <td>
-              <div class="c-field-input">
-                <input type="text" style="inline-size: 3ch">
-                <div class="c-field-input__suffix">/ 60</div>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2">
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary">
+                  Sauver
+                </button>
               </div>
-            </td>
-            <td class="u-text-end">
-              <button
-                class="c-button"
-                data-size="xs"
-                data-variant="outlined"
-                aria-label="options">
-                <span class="c-icon">
-                  {% include "svg/icons/icon_options.svg" %}
-                </span>
-              </button>
             </td>
           </tr>
           <tr>
-            <th scope="row">Marguerite Lemal</th>
+            <th scope="row">Coupé Jérôme</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2">
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary">
+                  Sauver
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Ledoux Pierre-Vincent</th>
+            <td>
+              <span class="c-badge" data-theme="warning">A encoder</span>
+            </td>
+            <td>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2">
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary">
+                  Sauver
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Rambouillet Jean-Hugues</th>
             <td>
               <span class="c-badge" data-theme="danger">Echec</span>
             </td>
             <td>
-              <div class="c-field-input">
-                <input type="text" style="inline-size: 3ch" value="18">
-                <div class="c-field-input__suffix">/ 60</div>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2" value="12" disabled>
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary"
+                  disabled>
+                  Sauver
+                </button>
               </div>
-            </td>
-            <td class="u-text-end">
-              <button class="c-button" data-size="xs"
-              data-variant="outlined">
-                <span class="c-button__icon">
-                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
-                </span>
-              </button>
             </td>
           </tr>
           <tr>
-            <th scope="row">Julien Moreau</th>
+            <th scope="row">Moreau Julien</th>
             <td>
               <span class="c-badge" data-theme="warning">A encoder</span>
             </td>
             <td>
-              <div class="c-field-input">
-                <input type="text" style="inline-size: 3ch">
-                <div class="c-field-input__suffix">/ 60</div>
+              <div 
+                class="c-stack c-stack--gap-xs c-stack--justify-end c-stack--align-stretch"
+                data-direction="row">
+                <div class="c-field-input">
+                  <input type="text" size="2">
+                  <div class="c-field-input__suffix">/ 60</div>
+                </div>
+                <button
+                  class="c-button"
+                  data-size="sm"
+                  data-variant="primary">
+                  Sauver
+                </button>
               </div>
-            </td>
-            <td class="u-text-end">
-              <button class="c-button" data-size="xs"
-              data-variant="outlined">
-                <span class="c-button__icon">
-                  <span class="c-icon">{% include "svg/icons/icon_options.svg" %}</span>
-                </span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Pierre-Vincent Ledoux</th>
-            <td>
-              <span class="c-badge" data-theme="warning">A encoder</span>
-            </td>
-            <td>
-              <div class="c-field-input">
-                <input type="text" style="inline-size: 3ch">
-                <div class="c-field-input__suffix">/ 60</div>
-              </div>
-            </td>
-            <td class="u-text-end">
-              <button
-                class="c-button"
-                data-size="xs"
-                data-variant="outlined"
-                aria-label="options">
-                <span class="c-icon">
-                  {% include "svg/icons/icon_options.svg" %}
-                </span>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Etienne Baffrey</th>
-            <td>
-              <span class="c-badge" data-theme="warning">A encoder</span>
-            </td>
-            <td>
-              <div class="c-field-input">
-                <input type="text" style="inline-size: 3ch">
-                <div class="c-field-input__suffix">/ 60</div>
-              </div>
-            </td>
-            <td class="u-text-end">
-              <button
-                class="c-button"
-                data-size="xs"
-                data-variant="outlined"
-                aria-label="options">
-                <span class="c-icon">
-                  {% include "svg/icons/icon_options.svg" %}
-                </span>
-              </button>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p class="u-mbs-md">
-      <button 
-        class="c-button"
-        data-variant="primary">Enregistrer</button>
-    </p>
+  </div>
+
+  <div class="c-toast-group">
+    <template>
+      <div class="c-toast js-toast">
+        <div class="c-toast__content">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="c-toast__close">
+          <button class="c-button c-button--xxs c-button--plain">
+            <span class="c-icon">
+              {% include "svg/icons/icon_close.svg" %}
+            </span>
+          </button>
+        </div>
+      </div>
+    </template>
   </div>
   
 {% endblock %}

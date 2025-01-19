@@ -10,6 +10,8 @@
   font-size: var(--iad-fontsize-base);
   overflow-x: auto;
   overflow-y: clip;
+  scrollbar-width: thin;
+  scrollbar-color: auto transparent;
 }
 
 .c-datatable table {
@@ -25,12 +27,12 @@
 .c-datatable td {
   padding: var(--datatable-cellpadding-block)
     var(--datatable-cellpadding-inline);
-  vertical-align: middle;
   text-align: start;
+  vertical-align: baseline;
 }
 
 .c-datatable thead th {
-  font-weight: 550;
+  font-weight: 600;
 }
 
 .c-datatable tbody th {
@@ -45,4 +47,17 @@
 .c-datatable tr th:last-child,
 .c-datatable tr td:last-child {
   padding-inline-end: 0;
+}
+
+/* =======================================
+=datatable header buttons
+======================================= */
+
+.c-datatable th > button {
+  gap: 6px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-weight: inherit;
 }

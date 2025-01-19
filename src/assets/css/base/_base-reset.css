@@ -32,9 +32,13 @@ textarea:not([rows]) {
 :where(input, button, select, textarea, select) {
   font-size: inherit;
   font-family: inherit;
+  font-weight: inherit;
   line-height: inherit;
   color: inherit;
+  background-color: unset;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 :where(input[type="checkbox"], input[type="radio"]) {

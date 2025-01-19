@@ -3,13 +3,19 @@
 ======================================= */
 
 a {
-  color: var(--iad-brand-dark);
+  color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.18em;
+  color: var(--iad-brand-dark);
+  text-decoration-thickness: 1px;
 
   &:focus,
   &:hover {
+    color: inherit;
     text-decoration: underline;
+    text-underline-offset: 0.18em;
+    color: var(--iad-brand-dark);
+    text-decoration-thickness: 1px;
   }
 }
 
