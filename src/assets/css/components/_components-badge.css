@@ -19,22 +19,26 @@
   text-wrap: nowrap;
 }
 
+.c-badge--brand,
 .c-badge[data-theme="brand"] {
   --badge-background: var(--iad-brand-washed);
   --badge-border: var(--iad-brand);
   --badge-color: var(--iad-brand-dark);
 }
 
+.c-badge--success,
 .c-badge[data-theme="success"] {
   --badge-background: var(--iad-ui-success-washed);
   --badge-border: var(--iad-ui-success);
   --badge-color: var(--iad-ui-success-dark);
 }
 
+.c-badge--warning,
 .c-badge[data-theme="warning"] {
   --badge-background: var(--iad-ui-warning-washed);
 }
 
+.c-badge--danger,
 .c-badge[data-theme="danger"] {
   --badge-background: var(--iad-ui-danger-washed);
   --badge-border: var(--iad-ui-danger);

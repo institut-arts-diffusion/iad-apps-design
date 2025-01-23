@@ -18,4 +18,8 @@
   padding: 12px 12px 12px 36px;
   color: var(--iad-gray-100);
   line-height: 1.2;
+
+  background-image: url(../img/searchfield-icon.svg);
+  background-position: 6px 50%;
+  background-repeat: no-repeat;
 }

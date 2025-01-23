@@ -60,7 +60,8 @@
 =colors
 ======================================= */
 
-.c-button[data-variant="primary"] {
+.c-button[data-variant="primary"],
+.c-button--primary {
   --btn-background: var(--iad-gray-100);
   --btn-border: var(--iad-gray-100);
   --btn-color: var(--iad-white);
@@ -68,7 +69,8 @@
   --btn-color-interactive: var(--iad-white);
 }
 
-.c-button[data-variant="danger"] {
+.c-button[data-variant="danger"],
+.c-button--danger {
   --btn-background: var(--iad-ui-danger-dark);
   --btn-border: var(--iad-ui-danger-dark);
   --btn-color: var(--iad-white);

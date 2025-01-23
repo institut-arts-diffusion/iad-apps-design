@@ -23,7 +23,7 @@
   padding: 3px 6px;
 
   &:focus-within {
-    outline: 2px solid var(--iad-brand-dark);
+    outline: 2px inset var(--iad-brand-dark);
   }
 }
 
