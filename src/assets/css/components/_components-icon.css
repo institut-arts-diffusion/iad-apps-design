@@ -11,6 +11,10 @@
   }
 }
 
-.c-icon[data-size="24px"] {
+.c-icon--lg {
+  --icon-size: 24px;
+}
+
+.c-icon--xl {
   --icon-size: 24px;
 }
