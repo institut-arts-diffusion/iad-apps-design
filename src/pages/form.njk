@@ -255,6 +255,17 @@ permalink: form/index.html
           </label>
         </div>
         <div class="c-field-file">
+          <div class="c-field-file__preview">
+            <img
+              src="/assets/img/avatar-jco.jpg" 
+              class="c-field-file__placeholder"
+              width="30"
+              height="30"
+              alt="">
+            <div class="c-field-file__data">
+              <p class="c-field-file__filename">jerome-chauve.jpg</p>
+            </div>
+          </div>
           <input
             type="file"
             id="photo"
@@ -395,6 +406,39 @@ permalink: form/index.html
           class="c-field-hint"
           data-variant="danger">
           <p>Veuillez entrer une date dans le futur</p>
+        </div>
+      </div>
+      <div class="c-field">
+        <div>
+          <label class="c-field-label">
+            Certificat d'études secondaires (CESS)
+            <span class="c-field-label__required">*</span>
+          </label>
+        </div>
+        <div
+          class="c-field-hint">
+          <p>Copie de votre CESS en format PDF</p>
+        </div>
+        <div class="c-field-file">
+          <div class="c-field-file__preview">
+            <img
+              src="/assets/img/placeholder-file.svg" 
+              class="c-field-file__placeholder"
+              width="30"
+              height="30"
+              alt="">
+            <div class="c-field-file__data">
+              <p class="c-field-file__filename">my-cess.jpg</p>
+            </div>
+          </div>
+          <input
+            type="file"
+            id="photo"
+            name="photo" />
+        </div>
+        <div
+          class="c-field-hint c-field-hint--danger">
+          <p>Le document doit être en format PDF</p>
         </div>
       </div>
       <div>

@@ -15,14 +15,17 @@
 =variants
 ======================================= */
 
-.c-field-hint[data-variant="danger"] {
+.c-field-hint[data-variant="danger"],
+.c-field-hint--danger {
   color: var(--iad-ui-danger-dark);
 }
 
-.c-field-hint[data-variant="success"] {
+.c-field-hint[data-variant="success"],
+.c-field-hint--success {
   color: var(--iad-ui-success-dark);
 }
 
-.c-field-hint[data-variant="warning"] {
+.c-field-hint[data-variant="warning"],
+.c-field-hint--warning {
   color: var(--iad-ui-warning-dark);
 }

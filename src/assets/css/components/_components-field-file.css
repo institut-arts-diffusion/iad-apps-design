@@ -52,3 +52,38 @@ input[type="file"][disabled]::file-selector-button {
   border-color: var(--iad-gray-700);
   cursor: not-allowed;
 }
+
+/* =======================================
+=preview of the file
+======================================= */
+
+.c-field-file__preview {
+  --file-preview-gap: var(--iad-space-xs);
+  --file-preview-mbe: var(--iad-space-xs);
+  --file-placeholder-size: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--file-preview-gap);
+  margin-block-end: var(--file-preview-mbe);
+}
+
+.c-field-file__placeholder {
+  flex: 0 0 var(--file-placeholder-size);
+}
+
+.c-field-file__placeholder > img {
+  inline-size: var(--file-placeholder-size);
+  block-size: var(--file-placeholder-size);
+  object-fit: cover;
+}
+
+.c-field-file__data {
+  flex: 1 1 100%;
+}
+
+.c-field-file__filename {
+  margin: 0;
+}
