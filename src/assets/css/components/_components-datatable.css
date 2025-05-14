@@ -50,6 +50,16 @@
 }
 
 /* =======================================
+=datatable fixed column in size
+======================================= */
+
+.c-fixedcol {
+  --column-width: 300px;
+
+  inline-size: var(--column-width);
+}
+
+/* =======================================
 =datatable header buttons
 ======================================= */
 
