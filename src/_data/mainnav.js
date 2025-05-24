@@ -1,5 +1,10 @@
 export default [
   {
+    navLabel: "Dashboard",
+    navUrl: "/dashboard/",
+    navTrigger: "dashboard",
+  },
+  {
     navLabel: "Form",
     navUrl: "/form/",
     navTrigger: "form",

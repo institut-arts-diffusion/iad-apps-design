@@ -32,19 +32,22 @@
   font-family: var(--fontstack-alt);
 }
 
-.c-message[data-variant="warning"] {
+.c-message[data-variant="warning"],
+.c-message--warning {
   --msg-background: var(--iad-ui-warning-washed);
   --msg-border: var(--iad-ui-warning);
   --msg-link-color: var(--iad-ui-warning-dark);
 }
 
-.c-message[data-variant="danger"] {
+.c-message[data-variant="danger"],
+.c-message--danger {
   --msg-background: var(--iad-ui-danger-washed);
   --msg-border: var(--iad-ui-danger);
   --msg-link-color: var(--iad-ui-danger-dark);
 }
 
-.c-message[data-variant="success"] {
+.c-message[data-variant="success"],
+.c-message--success {
   --msg-background: var(--iad-ui-success-washed);
   --msg-border: var(--iad-ui-success);
   --msg-link-color: var(--iad-ui-success-dark);

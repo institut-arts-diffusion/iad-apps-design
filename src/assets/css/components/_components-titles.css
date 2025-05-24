@@ -7,41 +7,41 @@
 :is(.c-h1, .c-h2, .c-h3, .c-h4, .c-h5, .c-h6) {
   --title-border-color: var(--iad-gray-700);
   --title-mbe: 0.6em;
-  --title-mbs: 1.2em;
   --title-pbe: 0.33em;
 
   font-weight: 500;
   font-family: var(--fontstack-alt);
   line-height: 1.38;
   color: var(--iad-gray-100);
-  margin-block-start: var(--title-mbs);
   margin-block-end: var(--title-mbe);
 }
 
 .c-h1 {
   margin-block-start: 0;
-  font-size: clamp(calc(26 / 16 * 1rem), 1rem + 1vw, calc(29 / 16 * 1rem));
+  font-size: var(--iad-fontsize-800);
 }
 
 .c-h2 {
-  font-size: clamp(calc(23 / 16 * 1rem), 1rem + 0.72vw, calc(26 / 16 * 1rem));
+  font-size: var(--iad-fontsize-700);
 }
 
 .c-h3 {
-  font-size: clamp(calc(20 / 16 * 1rem), 1rem + 0.48vw, calc(23 / 16 * 1rem));
+  font-size: var(--iad-fontsize-600);
 }
 
 .c-h4 {
-  font-size: clamp(calc(18 / 16 * 1rem), 1rem + 0.24vw, calc(20 / 16 * 1rem));
+  font-size: var(--iad-fontsize-500);
 }
 
 .c-h5 {
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: var(--iad-fontsize-400);
 }
 
 .c-h6 {
-  font-size: 1rem;
-  color: var(--iad-gray-400);
+  font-weight: 600;
+  font-size: var(--iad-fontsize-300);
+  text-transform: uppercase;
 }
 
 :is(.c-h1--border, .c-h2--border, .c-h3--border, .c-h4--border) {

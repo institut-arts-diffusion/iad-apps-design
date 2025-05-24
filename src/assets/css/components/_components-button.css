@@ -45,11 +45,13 @@
   font-weight: var(--btn-font-weigth);
   font-size: var(--btn-font-size);
   line-height: 1;
+  text-decoration: none;
 
   transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
 
   &:hover,
   &:focus {
+    text-decoration: none;
     background-color: var(--btn-background-interactive);
     border-color: var(--btn-border-interactive);
     color: var(--btn-color);

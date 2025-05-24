@@ -32,6 +32,15 @@
 }
 
 /* =======================================
+=base class (fluid grid)
+======================================= */
+
+.l-grid--autofill {
+  --min: 300px;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--min), 100%), 1fr));
+}
+
+/* =======================================
 =rwd classes (columns)
 ======================================= */
 

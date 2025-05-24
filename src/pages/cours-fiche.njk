@@ -1,0 +1,81 @@
+---
+permalink: cours/fiche/index.html
+---
+
+{% extends "layouts/base.njk" %} 
+
+{% block content %}
+
+  <div class="l-container l-container--lg">
+    <ul class="c-breadcrumbs u-mbe-xl">
+      <li class="c-breadcrumbs__item">
+        <a class="c-breadcrumbs__link" href="#">
+          <span class="c-icon" aria-label="home">
+            {% include "svg/icons/icon_home.svg" %}
+          </span>
+        </a>
+      </li>
+      <li class="c-breadcrumbs__item">
+        <a class="c-breadcrumbs__link" href="/cours/">Cours</a>
+      </li>
+      <li class="c-breadcrumbs__item">
+        <a class="c-breadcrumbs__link" href="/cours/fiche/">Fiche</a>
+      </li>
+    </ul>
+
+    <div class="u-mbe-xxl">
+      <h1 class="c-h1 u-mbe-xxs">Introduction au dévelopement web front-end</h1>
+      <p><strong>IAD1053</strong> - Jérôme Coupé - UE81, UE2, U317</p>
+    </div>
+
+    <ul class="c-tabs u-mbe-lg">
+      <li class="c-tabs__item">
+        <a class="c-tabs__link" href="/cours/points/">Points</a>
+      </li>
+      <li class="c-tabs__item">
+        <a class="c-tabs__link  is-active" href="/cours/fiche/">Fiche</a>
+      </li>
+    </ul>
+
+    <form
+      class="c-form"
+      method="get">
+      <div class="c-stack c-stack--column c-stack--gap-md">
+        <div class="c-field">
+          <div>
+            <label
+              class="c-field-label"
+              for="title">
+              Titre du cours
+              <span class="c-field-label__required">*</span>
+            </label>
+          </div>
+          <div class="c-field-input" data-width="full">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              value="Introduction au dévelopement web front-end" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label
+              class="c-field-label"
+              for="description">
+              Description
+              <span class="c-field-label__required">*</span>
+            </label>
+          </div>
+          <div class="c-field-textarea" data-width="full">
+            <textarea rows="3" name="description" id="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, officiis repellat accusantium aperiam natus, possimus nulla voluptatibus eius similique tempora totam voluptate quo minima? Vitae dolore eum quae cupiditate fuga.
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  
+{% endblock %}

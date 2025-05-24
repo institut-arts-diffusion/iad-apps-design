@@ -11,7 +11,7 @@
   padding: 3px 8px;
   color: var(--badge-color);
   font-weight: 400;
-  font-size: calc(13 / 16 * 1rem);
+  font-size: var(--iad-fontsize-2xs);
   line-height: 1.07;
   background-color: var(--badge-background);
   border: 1px solid var(--badge-border);

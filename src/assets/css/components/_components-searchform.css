@@ -15,11 +15,11 @@
   background-color: var(--iad-gray-900);
   border: 1px solid var(--iad-gray-700);
   border-radius: var(--iad-radius);
-  padding: 12px 12px 12px 36px;
+  padding: 12px 12px 12px 42px;
   color: var(--iad-gray-100);
   line-height: 1.2;
 
   background-image: url(../img/searchfield-icon.svg);
-  background-position: 6px 50%;
+  background-position: 10px 50%;
   background-repeat: no-repeat;
 }
