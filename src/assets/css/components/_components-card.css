@@ -3,7 +3,14 @@
 ======================================= */
 
 .c-card {
+  --card-border-color: var(--iad-gray-700);
+  --card-padding: 18px;
+  --card-radius: var(--iad-radius-md);
+
   display: block;
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-radius);
+  overflow: clip;
 }
 
 .c-card[inert] {
@@ -11,28 +18,26 @@
 }
 
 .c-card__media {
-  overflow: hidden;
-  margin-block-end: 12px;
+  overflow: clip;
 
   & > a {
     display: block;
   }
 }
 
-.c-card__image {
-  scale: 1;
-  transition: scale 0.2s ease-out;
+.c-card__body {
+  padding: var(--card-padding);
+}
 
-  a:hover &,
-  a:focus & {
-    scale: 1.018;
-  }
+.c-card__body > *:last-child {
+  margin-block-end: 0;
 }
 
 .c-card__title {
   font-weight: 500;
-  font-size: calc(18 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   line-height: 1.36;
   font-family: var(--fontstack-alt);
   color: var(--iad-gray-100);
+  margin-block-end: 0.5em;
 }
