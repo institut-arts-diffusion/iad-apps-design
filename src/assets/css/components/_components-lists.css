@@ -1,0 +1,22 @@
+/* =======================================
+=lists
+======================================= */
+
+.c-hlist {
+  --hlist-separator: ", ";
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-hlist > li:not(:last-child)::after {
+  content: var(--hlist-separator);
+  white-space: pre;
+}

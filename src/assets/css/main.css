@@ -55,6 +55,7 @@
 @import "components/_components-toast-group.css" layer(components);
 @import "components/_components-toast.css" layer(components);
 @import "components/_components-usernav.css" layer(components);
+@import "components/_components-lists.css" layer(components);
 
 @import "utilities/_utilities-spacing.css" layer(utilities);
 @import "utilities/_utilities-visually-hidden.css" layer(utilities);
