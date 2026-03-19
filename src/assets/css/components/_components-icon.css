@@ -3,7 +3,7 @@
 ======================================= */
 
 .c-icon {
-  --icon-size: 2ex;
+  --icon-size: 1ex;
 
   & svg {
     display: block;
