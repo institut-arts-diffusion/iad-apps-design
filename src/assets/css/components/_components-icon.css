@@ -3,7 +3,8 @@
 ======================================= */
 
 .c-icon {
-  --icon-size: 18px;
+  --icon-size: 2ex;
+
   & svg {
     display: block;
     inline-size: var(--icon-size);
@@ -11,10 +12,14 @@
   }
 }
 
-.c-icon--lg {
+.c-icon--18 {
+  --icon-size: 18px;
+}
+
+.c-icon--24 {
   --icon-size: 24px;
 }
 
-.c-icon--xl {
-  --icon-size: 24px;
+.c-icon--30 {
+  --icon-size: 30px;
 }
